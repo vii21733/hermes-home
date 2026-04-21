@@ -1,8 +1,10 @@
 #!/bin/bash
-# Background sync daemon - pushes to GitHub every 30 minutes
-INTERVAL=1800  # 30 minutes in seconds
+# Background sync daemon - pushes to GitHub every 1 minute
+INTERVAL=60  # 1 minute in seconds
+
+HERMES_HOME="$(cd "$(dirname "$0")" && pwd)"
 
 while true; do
     sleep $INTERVAL
-    /home/z/my-project/hermes-home/auto-sync.sh
+    "$HERMES_HOME/auto-sync.sh"
 done

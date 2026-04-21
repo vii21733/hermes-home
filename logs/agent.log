@@ -22595,3 +22595,17 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 16:36:51,382 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Retry'
 2026-04-21 16:45:24,214 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-21 16:45:24,216 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=512.8s api_calls=3 response=3547 chars
+2026-04-21 16:55:28,708 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (30 chars)
+2026-04-21 16:55:28,725 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='You should have your own email'
+2026-04-21 16:56:05,433 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 16:56:05,434 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=36.7s api_calls=2 response=167 chars
+2026-04-21 16:56:29,780 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (45 chars)
+2026-04-21 16:56:29,797 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='I mean you should have your own ai agent mail'
+2026-04-21 16:56:56,964 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 16:56:56,964 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=27.2s api_calls=1 response=186 chars
+2026-04-21 16:58:00,278 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (56 chars)
+2026-04-21 16:58:00,293 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='1 create your own gmail find a way no manual work for me'
+2026-04-21 16:58:10,555 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 16:58:10,555 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=10.3s api_calls=1 response=710 chars
+2026-04-21 16:59:05,082 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (64 chars)
+2026-04-21 16:59:05,099 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try to find a temp mail for you to use that can send and recieve'
