@@ -22771,3 +22771,8 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 20:01:49,142 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Check your email if theres a message'
 2026-04-21 20:02:29,025 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-21 20:02:29,027 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=39.9s api_calls=3 response=392 chars
+2026-04-21 20:04:58,389 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (83 chars)
+2026-04-21 20:04:58,406 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='It says the settings is not available on your sccount in gmail find a way to fix'
+2026-04-21 20:05:11,914 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 23 (stop_command)
+2026-04-21 20:05:11,915 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-21 20:05:12,339 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 22 is no longer current
