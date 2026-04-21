@@ -22643,3 +22643,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 17:34:26,824 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try the email to register snd see if it recieve code'
 2026-04-21 17:41:53,513 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 17:41:53,513 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-21 17:44:21,822 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 17:44:21,824 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=595.0s api_calls=14 response=834 chars
+2026-04-21 17:44:21,987 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 17:44:22,409 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 17:44:56,898 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (15 chars)
+2026-04-21 17:44:56,913 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Yes try yopmail'
