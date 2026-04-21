@@ -14,4 +14,4 @@ FLUX.1-Kontext-dev is REMOVED from use. Only using FLUX.2-klein-4B for image gen
 §
 PROGRESSIVE UPDATES IS MANDATORY - Must show "Step X/Y: [action]..." BEFORE and DURING every tool execution. Use format: "**Step X/Y:** [specific action]... [⏳/✅/❌]". Never execute silently. This applies to ALL tasks including code execution, file operations, web browsing, research, etc. Status indicators: ⏳=in progress, ✅=completed, ❌=failed, ⏸️=waiting.
 §
-AI Agent Email: jhodsko08@gmail.com (Gmail). SMTP credentials required to send. Can receive via Gmail API or IMAP.
+Primary Email: jhodsko08@gmail.com | Password: Jezy@2173 | Provider: Gmail | SMTP: smtp.gmail.com:587 | Status: Ready to send (credentials configured)

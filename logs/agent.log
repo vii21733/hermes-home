@@ -22680,3 +22680,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 19:24:43,970 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 19:24:43,971 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
 2026-04-21 19:27:17,865 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (83 chars)
+2026-04-21 19:29:23,314 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:29:23,317 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=520.0s api_calls=4 response=453 chars
+2026-04-21 19:29:23,378 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 19:29:23,812 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 19:29:40,873 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (66 chars)
+2026-04-21 19:29:40,888 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='The password of jhods is Jezy@2173 save everything and remember it'
