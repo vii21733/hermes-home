@@ -22784,3 +22784,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 20:09:53,793 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=253.2s api_calls=8 response=966 chars
 2026-04-21 20:09:53,858 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 20:09:54,215 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 20:20:30,122 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (54 chars)
+2026-04-21 20:20:30,139 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try to find a skill on clawhub on how to connect gmail'
