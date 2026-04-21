@@ -22692,3 +22692,6 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 19:36:39,580 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='This is a dump account for you to use just follow what i says'
 2026-04-21 19:36:52,363 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-21 19:36:52,363 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=12.8s api_calls=1 response=1039 chars
+2026-04-21 19:38:19,437 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-21 19:38:26,852 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (9 chars)
+2026-04-21 19:38:26,868 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try again'
