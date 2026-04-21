@@ -24,3 +24,18 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] Starting keeper..." >> "$LOG_FILE"
 "$PYTHON" "$KEEPER" >> "$LOG_FILE" 2>&1
 
 echo "[$(date '+%Y-%m-%d %H:%M:%S')] Keeper launched" >> "$LOG_FILE"
+
+# Start sync daemon if not already running
+SYNC_PID_FILE="$HERMES_HOME/sync-daemon.pid"
+if [ -f "$SYNC_PID_FILE" ]; then
+    SP=$(cat "$SYNC_PID_FILE" 2>/dev/null || true)
+    if [ -n "$SP" ] && kill -0 "$SP" 2>/dev/null; then
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Sync daemon already running (PID $SP)" >> "$LOG_FILE"
+    else
+        python3 "$HERMES_HOME/sync-daemon.py" >> "$LOG_FILE" 2>&1 &
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Sync daemon started" >> "$LOG_FILE"
+    fi
+else
+    python3 "$HERMES_HOME/sync-daemon.py" >> "$LOG_FILE" 2>&1 &
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Sync daemon started" >> "$LOG_FILE"
+fi
