@@ -76,24 +76,48 @@ for func in functions:
     func['is_anticheat'] = any(p in func['name'].lower() for p in anti_patterns)
 ```
 
-### 5. Generate dump.cs
+### 5. Generate dump.cs (Il2CppDumper Style)
 ```python
 output = []
+output.append('// ===============================================')
 output.append('// Il2CppDumper Generated Dump')
+output.append('// Module: libanogs.so')
+output.append('// ===============================================')
 output.append('using System;')
+output.append('using System.Collections.Generic;')
+output.append('using UnityEngine;')
+output.append('')
 output.append('namespace Garena.AntiCheat {')
-output.append('    public class AnogsNative {')
+output.append(' public class AnogsNative {')
+output.append(f' // Total Functions: {len(functions)}')
+output.append('')
 
 for func in functions:
-    sub_name = f"sub_{func['rva']:X}"
-    rva = f"0x{func['rva']:X}"
-    size = func['size']
-    marker = '[ANTI-CHEAT]' if func.get('is_anticheat') else ''
-    
-    output.append(f'        // {marker} RVA: {rva} Size: {size}')
-    output.append(f'        public static void {sub_name}() {{ }} // {func["name"]}')
+ rva_hex = f"0x{func['rva']:X}"
+ offset_hex = f"0x{func['rva']:X}"
+ size = func['size']
+ sub_name = f"sub_{func['rva']:X}"
+ 
+ # Clean C# name
+ safe_name = re.sub(r'[^a-zA-Z0-9_]', '_', func['name'])
+ if safe_name[0].isdigit():
+ safe_name = '_' + safe_name
+ 
+ if func.get('is_anticheat'):
+ output.append(f' // [ANTI-CHEAT] RVA: {rva_hex} Offset: {offset_hex} Size: {size}')
+ else:
+ output.append(f' // RVA: {rva_hex} Offset: {offset_hex} Size: {size}')
+ 
+ output.append(f' public static void {sub_name}() {{ }} // {safe_name}')
+ output.append('')
 
-output.append('    }')
+output.append(' }')
+output.append('')
+output.append(' public static class PatchOffsets {')
+for func in anticheat_funcs:
+ clean = func['name'].upper().replace('.', '_')
+ output.append(f' public const ulong {clean} = 0x{func["rva"]:X};')
+output.append(' }')
 output.append('}')
 ```
 
@@ -126,10 +150,12 @@ Interceptor.attach(Module.findBaseAddress('libanogs.so').add(0x{func['rva']:X}),
 | verifySignature | 0x9000 | `B8 01 00 00 00 C3` | Return true |
 
 ## Pitfalls
+
 - **Stripped binaries**: May have no symbol names (sub_0x1234 only)
 - **Control flow obfuscation**: Real function entry may differ from symbol
 - **Dynamic loading**: Some functions may be decrypted at runtime
 - **Missing symbol table**: Use `readelf -s` first to verify symbols exist
+- **Missing file**: Analysis requires the actual .so file (not templates)
 
 ## Verification
 ```bash
@@ -141,4 +167,7 @@ nm -D libanogs.so | grep -i verify
 
 # Disassemble specific RVA
 objdump -d libanogs.so --start-address=0x5000 --stop-address=0x5100
+
+# Generate dump with all subs
+python3 anogs_dumper.py libanogs.so > dump.cs
 ```
