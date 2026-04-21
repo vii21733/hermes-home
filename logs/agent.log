@@ -22699,3 +22699,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 19:39:19,284 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=52.4s api_calls=1 response=1024 chars
 2026-04-21 19:42:09,407 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (1 chars)
 2026-04-21 19:42:09,421 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='3'
+2026-04-21 19:42:36,221 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:42:36,222 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=26.8s api_calls=1 response=801 chars
+2026-04-21 19:42:52,880 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (42 chars)
+2026-04-21 19:42:52,897 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Remove the jhodskonthe use temp as primary'
+2026-04-21 19:43:37,688 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:43:37,688 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=44.8s api_calls=3 response=504 chars
