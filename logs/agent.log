@@ -22641,3 +22641,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 17:31:53,741 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=191.3s api_calls=3 response=248 chars
 2026-04-21 17:34:26,808 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (52 chars)
 2026-04-21 17:34:26,824 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try the email to register snd see if it recieve code'
+2026-04-21 17:41:53,513 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 17:41:53,513 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
