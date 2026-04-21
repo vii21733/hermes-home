@@ -22731,3 +22731,11 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 19:46:14,364 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=6.2s api_calls=1 response=64 chars
 2026-04-21 19:46:26,826 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
 2026-04-21 19:46:26,844 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='What about blackman joke'
+2026-04-21 19:46:33,596 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:46:33,596 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=6.8s api_calls=1 response=79 chars
+2026-04-21 19:47:17,076 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (78 chars)
+2026-04-21 19:47:17,092 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Use this email as your email now jhodsko08@gmail.com and password is Jezy@2173'
+2026-04-21 19:47:20,879 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:47:20,880 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.8s api_calls=1 response=85 chars
+2026-04-21 19:47:44,743 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (70 chars)
+2026-04-21 19:47:44,755 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Save it and remove the other email make that new email as your primary'
