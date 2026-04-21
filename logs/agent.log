@@ -22786,3 +22786,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 20:09:54,215 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 20:20:30,122 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (54 chars)
 2026-04-21 20:20:30,139 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try to find a skill on clawhub on how to connect gmail'
+2026-04-21 20:22:24,899 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 20:22:24,901 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=114.8s api_calls=8 response=986 chars
+2026-04-21 20:22:47,590 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (30 chars)
+2026-04-21 20:22:47,610 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try the gmail api auth instead'
