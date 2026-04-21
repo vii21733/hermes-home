@@ -22609,3 +22609,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 16:58:10,555 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=10.3s api_calls=1 response=710 chars
 2026-04-21 16:59:05,082 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (64 chars)
 2026-04-21 16:59:05,099 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try to find a temp mail for you to use that can send and recieve'
+2026-04-21 17:01:52,324 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 17:01:52,326 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=167.2s api_calls=6 response=755 chars
