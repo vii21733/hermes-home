@@ -13,3 +13,5 @@ SDXL is DEPRECATED and should NEVER be used.
 FLUX.1-Kontext-dev is REMOVED from use. Only using FLUX.2-klein-4B for image generation. API key: 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
 §
 PROGRESSIVE UPDATES IS MANDATORY - Must show "Step X/Y: [action]..." BEFORE and DURING every tool execution. Use format: "**Step X/Y:** [specific action]... [⏳/✅/❌]". Never execute silently. This applies to ALL tasks including code execution, file operations, web browsing, research, etc. Status indicators: ⏳=in progress, ✅=completed, ❌=failed, ⏸️=waiting.
+§
+AI Agent Email: iktccfvg@guerrillamailblock.com (Guerrilla Mail). SID Token: qmpn17t77j8do79o5q042uflb0. Can send/receive via API.
