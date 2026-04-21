@@ -22753,3 +22753,13 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 19:51:05,278 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Test it'
 2026-04-21 19:52:08,815 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=False previewed=True).
 2026-04-21 19:52:08,816 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=63.5s api_calls=2 response=23 chars
+2026-04-21 19:53:28,351 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (82 chars)
+2026-04-21 19:53:28,375 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Fix this ↻ Empty response after tool calls — using earlier content as final answ'
+2026-04-21 19:53:59,926 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:53:59,926 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=31.6s api_calls=1 response=246 chars
+2026-04-21 19:54:00,072 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 19:54:00,520 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 19:54:25,812 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (32 chars)
+2026-04-21 19:54:25,832 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Test the gmail if it can recieve'
+2026-04-21 19:54:40,978 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 19:54:40,979 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=15.1s api_calls=1 response=343 chars
