@@ -271,6 +271,28 @@ All commands return JSON. Parse with `jq` or read directly. Key fields:
 | `HttpError 403: Access Not Configured` | API not enabled — user needs to enable it in Google Cloud Console |
 | `ModuleNotFoundError` | Run `$GSETUP --install-deps` |
 | Advanced Protection blocks auth | Workspace admin must allowlist the OAuth client ID |
+| `[AUTHENTICATIONFAILED] Invalid credentials` | **Gmail requires App Password for IMAP** — see "Gmail Authentication Issues" below |
+| "This browser or app may not be secure" | **Google blocks browser automation** — use Gmail API OAuth instead of browser login |
+
+### Gmail Authentication Issues
+
+When accessing Gmail programmatically, you will hit authentication barriers. Here's the decision tree:
+
+**For IMAP/SMTP Access (himalaya, Python imaplib, etc.):**
+1. **Regular password = REJECTED** — Gmail blocks IMAP login with standard passwords
+2. **Solutions:**
+   - **App Password** (recommended): Enable 2FA first, then generate at https://myaccount.google.com/apppasswords
+   - **OAuth2**: Some libraries support Gmail's OAuth2 for IMAP (complex, requires tokens)
+   - **Less Secure Apps**: https://myaccount.google.com/lesssecureapps — **UNAVAILABLE** for newer accounts; Google deprecated this
+
+**For Browser Automation (Selenium, Playwright, etc.):**
+- **BLOCKED by default** — Google detects automated browsers
+- Error: "This browser or app may not be secure"
+- **Workaround:** Use Gmail API OAuth instead — it's the supported method
+
+**Recommended Approach:**
+- **Just email?** → Use `himalaya` skill with App Password (fastest)
+- **Email + Calendar/Drive/etc?** → Use `google-workspace` skill with OAuth2 (this skill)
 
 ## Revoking Access
 
