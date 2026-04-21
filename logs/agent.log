@@ -22780,3 +22780,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 20:05:40,624 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='It says the settings is not available on your sccount in gmail find a way to fix'
 2026-04-21 20:08:19,650 INFO [20260421_194444_e8e778be] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 20:08:19,651 INFO [20260421_194444_e8e778be] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-21 20:09:53,792 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 20:09:53,793 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=253.2s api_calls=8 response=966 chars
+2026-04-21 20:09:53,858 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 20:09:54,215 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
