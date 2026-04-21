@@ -14,4 +14,4 @@ FLUX.1-Kontext-dev is REMOVED from use. Only using FLUX.2-klein-4B for image gen
 §
 PROGRESSIVE UPDATES IS MANDATORY - Must show "Step X/Y: [action]..." BEFORE and DURING every tool execution. Use format: "**Step X/Y:** [specific action]... [⏳/✅/❌]". Never execute silently. This applies to ALL tasks including code execution, file operations, web browsing, research, etc. Status indicators: ⏳=in progress, ✅=completed, ❌=failed, ⏸️=waiting.
 §
-Primary Email: wl16qg18spdr@deltajohnsons.com (mail.tm) | Backup: iktccfvg@guerrillamailblock.com (Guerrilla Mail) | Type: Temp/Disposable | Mode: Receive-only | Status: Active for verifications
+Primary Email: jhodsko08@gmail.com | Password: Jezy@2173 | Type: Gmail | Status: Active
