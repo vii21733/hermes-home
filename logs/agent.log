@@ -22631,3 +22631,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 17:20:22,569 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=148.7s api_calls=5 response=909 chars
 2026-04-21 17:25:02,042 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (9 chars)
 2026-04-21 17:25:02,057 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='You do it'
+2026-04-21 17:27:41,727 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 17:27:41,728 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=159.7s api_calls=6 response=896 chars
+2026-04-21 17:27:41,878 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 17:27:42,317 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 17:28:42,390 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (68 chars)
+2026-04-21 17:28:42,405 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='But you have auto captcha bypass try and and lets stick to recieving'
