@@ -22776,3 +22776,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 20:05:11,914 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 23 (stop_command)
 2026-04-21 20:05:11,915 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
 2026-04-21 20:05:12,339 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 22 is no longer current
+2026-04-21 20:05:40,614 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (137 chars)
+2026-04-21 20:05:40,624 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='It says the settings is not available on your sccount in gmail find a way to fix'
