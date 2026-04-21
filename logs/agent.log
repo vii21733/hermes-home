@@ -22653,3 +22653,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 17:48:38,886 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
 2026-04-21 17:49:42,682 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 17:49:42,682 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-21 17:50:34,032 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-21 17:50:34,032 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=337.1s api_calls=7 response=932 chars
