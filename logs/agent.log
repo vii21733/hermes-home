@@ -22651,3 +22651,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 17:44:56,913 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Yes try yopmail'
 2026-04-21 17:48:38,886 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 17:48:38,886 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-21 17:49:42,682 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-21 17:49:42,682 INFO [20260421_154824_f858ac63] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
