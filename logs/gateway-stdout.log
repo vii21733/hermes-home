@@ -1,0 +1,138 @@
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚠️ Connection to provider dropped (RemoteProtocolError). Reconnecting… (attempt 2/3)
+🔄 Reconnected — resuming…
+↻ Thinking-only response — prefilling to continue (1/2)
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚠️ Connection to provider dropped (RemoteProtocolError). Reconnecting… (attempt 2/3)
+🔄 Reconnected — resuming…
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+  💾 User profile updated
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚠️  API call failed (attempt 1/3): BadRequestError [HTTP 400]
+   🔌 Provider: nvidia  Model: mistralai/devstral-2-123b-instruct-2512
+   🌐 Endpoint: https://integrate.api.nvidia.com/v1
+   📝 Error: HTTP 400: Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'
+   📋 Details: {'message': "Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'", 'type': 'BadRequestError', 'param': None, 'code': 400}
+⚠️ Non-retryable error (HTTP 400) — trying fallback...
+❌ Non-retryable error (HTTP 400): HTTP 400: Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'
+❌ Non-retryable client error (HTTP 400). Aborting.
+   🔌 Provider: nvidia  Model: mistralai/devstral-2-123b-instruct-2512
+   🌐 Endpoint: https://integrate.api.nvidia.com/v1
+   💡 This type of error won't be fixed by retrying.
+⚠️  Skipping session persistence for large failed session to prevent growth loop.
+⚠️  API call failed (attempt 1/3): BadRequestError [HTTP 400]
+   🔌 Provider: nvidia  Model: mistralai/devstral-2-123b-instruct-2512
+   🌐 Endpoint: https://integrate.api.nvidia.com/v1
+   📝 Error: HTTP 400: Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'
+   📋 Details: {'message': "Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'", 'type': 'BadRequestError', 'param': None, 'code': 400}
+⚠️ Non-retryable error (HTTP 400) — trying fallback...
+❌ Non-retryable error (HTTP 400): HTTP 400: Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'
+❌ Non-retryable client error (HTTP 400). Aborting.
+   🔌 Provider: nvidia  Model: mistralai/devstral-2-123b-instruct-2512
+   🌐 Endpoint: https://integrate.api.nvidia.com/v1
+   💡 This type of error won't be fixed by retrying.
+⚠️  Skipping session persistence for large failed session to prevent growth loop.
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+  💾 User profile updated
+  💾 User profile updated
+⚠️  API call failed (attempt 1/3): RateLimitError [HTTP 429]
+   🔌 Provider: nvidia  Model: moonshotai/kimi-k2.5
+   🌐 Endpoint: https://integrate.api.nvidia.com/v1
+   📝 Error: HTTP 429: Error code: 429 - {'status': 429, 'title': 'Too Many Requests'}
+   📋 Details: {'status': 429, 'title': 'Too Many Requests'}
+⏱️ Rate limited. Waiting 2.3s (attempt 2/3)...
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚠️ Model returned empty after tool calls — nudging to continue
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚡ Interrupted during API call.
+⚠️ Connection to provider dropped (RemoteProtocolError). Reconnecting… (attempt 2/3)
+🔄 Reconnected — resuming…
+⚠️ Model returned empty after tool calls — nudging to continue
+⚠️ Model returned empty after tool calls — nudging to continue
+⚠️ Model returned empty after tool calls — nudging to continue
+  💾 Skill 'android-native-library-analysis' created.
+⚠️ Model returned empty after tool calls — nudging to continue

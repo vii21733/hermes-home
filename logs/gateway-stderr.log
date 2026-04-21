@@ -1,0 +1,23 @@
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36300 13088 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36300 13156 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36300 13164 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+ERROR root: Non-retryable client error: Error code: 400 - {'error': {'message': "Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'", 'type': 'BadRequestError', 'param': None, 'code': 400}}
+ERROR root: Non-retryable client error: Error code: 400 - {'error': {'message': "Unexpected role 'user' after role 'tool' Unexpected role 'user' after role 'tool'", 'type': 'BadRequestError', 'param': None, 'code': 400}}
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36300 13164 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36364 13240 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36300 13248 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36368 13260 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+  z         6075 31.0  0.3  53400 32484 ?        S    15:06   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-agent/venv/bin/hermes gateway restart
+ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 6075). Stop the other gateway first.
+WARNING gateway.run: ✗ telegram failed to connect
+ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 6075). Stop the other gateway first.
+ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 6075). Stop the other gateway first.
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          758  0.0  0.1  36368 13260 ?        S    10:43   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py

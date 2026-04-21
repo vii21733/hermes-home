@@ -1,0 +1,29 @@
+{
+  "updated_at": "2026-04-21T16:42:06.325352",
+  "platforms": {
+    "telegram": [
+      {
+        "id": "5637761676",
+        "name": "N Ⓜ️ MEMES MyGate Network",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "discord": [],
+    "whatsapp": [],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": []
+  }
+}

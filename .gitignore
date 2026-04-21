@@ -1,0 +1,31 @@
+# Runtime/process files
+gateway.pid
+keeper.pid
+gateway.log
+keeper.log
+processes.json
+.restart_last_processed.json
+.update_check
+.skills_prompt_snapshot.json
+
+# Cache directories (regenerable)
+audio_cache/
+image_cache/
+cache/
+
+# WAL/SHM are temporary SQLite files
+state.db-shm
+
+# Session message chunks (too many small files)
+sessions/*/messages/
+sessions/*/tool_results/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# npm cache (86MB, regenerable)
+home/.npm/
+
+# Large log files
+logs/*.log.*
