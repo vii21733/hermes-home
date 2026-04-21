@@ -77,7 +77,42 @@ message.send.backend.auth.type = "password"
 message.send.backend.auth.cmd = "pass show google/app-password"
 ```
 
-**Note:** Gmail requires an App Password if 2FA is enabled.
+### Gmail Authentication Troubleshooting
+
+**Problem:** `AUTHENTICATIONFAILED Invalid credentials` even with correct password.
+
+**Root Cause:** Gmail blocks regular passwords for IMAP/SMTP. Requires **App Password**.
+
+**The Fix (3 Steps):**
+
+1. **Enable 2-Step Verification** (REQUIRED before App Passwords appear)
+   - Go to: https://myaccount.google.com/signinoptions/two-step-verification
+   - Click "Get started" and complete phone verification
+   - **Note:** App Passwords setting is HIDDEN until 2FA is enabled
+
+2. **Generate App Password**
+   - Go to: https://myaccount.google.com/apppasswords  
+   - Select app: "Mail"
+   - Select device: "Other" (name it "Hermes" or "CLI")
+   - Click "Generate" → Copy the 16-character code
+
+3. **Update Config**
+   - Replace `backend.auth.raw` or `backend.auth.cmd` with App Password
+   - **Do NOT** use your regular Gmail password
+
+**Common Errors & Solutions:**
+
+| Error | Meaning | Fix |
+|-------|---------|-----|
+| `AUTHENTICATIONFAILED Invalid credentials` | Using regular password | Generate App Password |
+| `Less secure apps not available` | Account has modern security | Enable 2FA first |
+| `App Passwords setting not available` | 2FA not enabled | Complete step 1 above |
+| Browser login fails with "not secure" | Bot detection triggered | Use App Password method instead |
+
+**Important:** 
+- "Less secure apps" setting is deprecated and unavailable on newer accounts
+- OAuth2 browser flows are detected/blocked by Google's bot protection
+- App Password is the ONLY reliable method for automated access
 
 ## iCloud Configuration
 
