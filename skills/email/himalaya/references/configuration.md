@@ -83,36 +83,74 @@ message.send.backend.auth.cmd = "pass show google/app-password"
 
 **Root Cause:** Gmail blocks regular passwords for IMAP/SMTP. Requires **App Password**.
 
+**CRITICAL PREREQUISITE:** If "App Passwords" setting is "not available" in your Google Account, you **MUST enable 2-Step Verification FIRST** before App Passwords will appear.
+
 **The Fix (3 Steps):**
 
-1. **Enable 2-Step Verification** (REQUIRED before App Passwords appear)
-   - Go to: https://myaccount.google.com/signinoptions/two-step-verification
-   - Click "Get started" and complete phone verification
-   - **Note:** App Passwords setting is HIDDEN until 2FA is enabled
+1. **Enable 2-Step Verification** (REQUIRED - App Passwords won't show without this)
+ - Go to: https://myaccount.google.com/signinoptions/two-step-verification
+ - Click "Get started"
+ - Add your phone number for SMS/call verification
+ - Complete the setup wizard
+ - **IMPORTANT:** Once 2FA is enabled, the "App passwords" option WILL appear in your account
 
 2. **Generate App Password**
-   - Go to: https://myaccount.google.com/apppasswords  
-   - Select app: "Mail"
-   - Select device: "Other" (name it "Hermes" or "CLI")
-   - Click "Generate" → Copy the 16-character code
+ - Go to: https://myaccount.google.com/apppasswords 
+ - Select app: "Mail"
+ - Select device: "Other" (name it "Hermes" or "CLI")
+ - Click "Generate" → Copy the 16-character code (e.g., `abcd efgh ijkl mnop`)
 
-3. **Update Config**
-   - Replace `backend.auth.raw` or `backend.auth.cmd` with App Password
-   - **Do NOT** use your regular Gmail password
+3. **Update Config with App Password**
+
+```toml
+[accounts.gmail]
+email = "you@gmail.com"
+display-name = "Your Name"
+default = true
+
+backend.type = "imap"
+backend.host = "imap.gmail.com"
+backend.port = 993
+backend.encryption.type = "tls"
+backend.login = "you@gmail.com"
+backend.auth.type = "password"
+backend.auth.raw = "YOUR_16_CHAR_APP_PASSWORD"  # NOT your regular password!
+
+message.send.backend.type = "smtp"
+message.send.backend.host = "smtp.gmail.com"
+message.send.backend.port = 587
+backend.encryption.type = "start-tls"
+message.send.backend.login = "you@gmail.com"
+message.send.backend.auth.type = "password"
+message.send.backend.auth.raw = "YOUR_16_CHAR_APP_PASSWORD"
+```
+
+**Security Note:** Store App Passwords securely using `pass` or keyring instead of `raw`:
+```toml
+backend.auth.cmd = "pass show email/gmail-app-password"
+```
 
 **Common Errors & Solutions:**
 
 | Error | Meaning | Fix |
 |-------|---------|-----|
-| `AUTHENTICATIONFAILED Invalid credentials` | Using regular password | Generate App Password |
-| `Less secure apps not available` | Account has modern security | Enable 2FA first |
-| `App Passwords setting not available` | 2FA not enabled | Complete step 1 above |
-| Browser login fails with "not secure" | Bot detection triggered | Use App Password method instead |
+| `AUTHENTICATIONFAILED Invalid credentials` | Using regular password | Use 16-char App Password |
+| `App Passwords setting not available` | 2FA not enabled | Enable 2-Step Verification first |
+| `Less secure apps not available` | Account has modern security | Use App Password method |
+| "This browser or app may not be secure" | Bot detection triggered | Use IMAP + App Password instead of browser login |
+| "Settings is not available" (in Gmail) | 2FA prerequisite not met | Complete step 1 above |
 
-**Important:** 
-- "Less secure apps" setting is deprecated and unavailable on newer accounts
-- OAuth2 browser flows are detected/blocked by Google's bot protection
-- App Password is the ONLY reliable method for automated access
+**What Does NOT Work for Gmail:**
+- ❌ Regular Gmail password (blocked for IMAP/SMTP)
+- ❌ "Less secure apps" toggle (deprecated/unavailable for new accounts)
+- ❌ Browser automation (Google detects and blocks)
+- ❌ Direct OAuth2 without Google Cloud project (requires console setup)
+
+**What DOES Work:**
+- ✅ **App Password** (after enabling 2FA) - Fastest, most reliable
+- ✅ **Google Workspace API** (via `google-workspace` skill) - Requires OAuth setup
+
+**Recommendation:** Use App Password method for immediate access. It's the only method that doesn't require Google Cloud Console setup.
 
 ## iCloud Configuration
 
