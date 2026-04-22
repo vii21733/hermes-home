@@ -22984,3 +22984,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 03:49:42,069 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try to call live api use your email register and find a temp phone'
 2026-04-22 03:52:41,788 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 03:52:41,789 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=179.7s api_calls=7 response=1474 chars
+2026-04-22 03:58:48,819 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (40 chars)
+2026-04-22 03:58:48,834 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='You have skill to bypass the cloud flare'
+2026-04-22 03:59:28,467 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 03:59:28,467 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
