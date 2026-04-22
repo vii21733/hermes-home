@@ -23299,3 +23299,30 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 06:50:37,202 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 06:50:37,211 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 06:50:37,290 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 06:53:55,733 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 06:53:55,739 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 06:53:56,431 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 06:53:58,105 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-397b-a17b)
+2026-04-22 06:54:04,381 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-397b-a17b)
+2026-04-22 06:54:06,040 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 2 (stop_command)
+2026-04-22 06:54:06,040 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-22 06:54:06,480 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 1 is no longer current
+2026-04-22 06:54:09,529 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 3 (session_reset)
+2026-04-22 06:54:09,997 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 5637761676
+2026-04-22 06:54:10,418 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-397b-a17b)
+2026-04-22 06:54:12,268 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 4 (session_reset)
+2026-04-22 06:54:12,786 INFO gateway.platforms.base: [Telegram] Sending response (205 chars) to 5637761676
+2026-04-22 06:54:18,721 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 06:54:22,540 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 06:54:22,545 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 06:54:23,087 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-397b-a17b)
+2026-04-22 06:54:23,395 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-397b-a17b)
+2026-04-22 06:54:49,334 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:54:49,335 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=26.8s api_calls=1 response=32 chars
+2026-04-22 06:54:49,507 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-397b-a17b)
+2026-04-22 06:54:49,507 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-397b-a17b) at https://integrate.api.nvidia.com/v1/
+2026-04-22 06:54:56,074 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
+2026-04-22 06:54:56,098 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a dead baby joke'
+2026-04-22 06:55:11,158 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-397b-a17b) at https://integrate.api.nvidia.com/v1/
+2026-04-22 06:55:11,381 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:55:11,382 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=15.3s api_calls=1 response=139 chars
