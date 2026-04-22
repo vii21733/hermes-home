@@ -22893,3 +22893,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 03:02:50,098 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='So both are now running?'
 2026-04-22 03:03:05,408 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 03:03:05,408 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=15.3s api_calls=1 response=608 chars
+2026-04-22 03:05:40,413 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (10 chars)
+2026-04-22 03:05:40,427 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Actived it'
+2026-04-22 03:06:35,776 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 03:06:35,776 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=55.3s api_calls=1 response=771 chars
+2026-04-22 03:06:49,352 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (25 chars)
+2026-04-22 03:06:49,360 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='So both are now activated'
