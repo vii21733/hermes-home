@@ -23587,3 +23587,14 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:22:32,528 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 08:22:32,536 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 08:22:32,588 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 08:27:16,306 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 08:27:16,724 INFO gateway.platforms.base: [Telegram] Sending response (211 chars) to 5637761676
+2026-04-22 08:27:19,896 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 08:27:19,902 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 08:27:20,346 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 08:27:21,579 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
+2026-04-22 08:27:25,644 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
+2026-04-22 08:27:35,201 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 08:27:35,202 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=15.3s api_calls=1 response=28 chars
+2026-04-22 08:27:35,325 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
+2026-04-22 08:27:35,325 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (mistralai/mistral-large-3-675b-instruct-2512) at https://integrate.api.nvidia.com/v1/
