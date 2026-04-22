@@ -23008,3 +23008,8 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 04:22:19,834 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Generate me an img of bird eating a diaper'
 2026-04-22 04:22:21,087 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 04:22:21,500 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 04:29:14,547 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 12 (stop_command)
+2026-04-22 04:29:14,548 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-22 04:29:16,326 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 11 is no longer current
+2026-04-22 04:29:19,456 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (16 chars)
+2026-04-22 04:29:19,473 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Where is the img'
