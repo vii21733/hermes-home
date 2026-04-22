@@ -24044,3 +24044,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 12:47:14,596 INFO gateway.run: Gateway stopped
 2026-04-22 12:47:14,597 INFO gateway.run: Cron ticker stopped
 2026-04-22 12:47:14,597 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-22 13:48:23,436 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 13:48:23,436 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
