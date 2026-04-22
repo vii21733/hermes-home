@@ -1,7 +1,7 @@
 {
-  "status": "flood_wait",
+  "status": "running",
   "keeper_pid": 459,
-  "gateway_pid": 11633,
-  "restarts": 0,
-  "timestamp": "2026-04-22T10:02:13"
+  "gateway_pid": 12609,
+  "restarts": 1,
+  "timestamp": "2026-04-22T10:05:18"
 }
