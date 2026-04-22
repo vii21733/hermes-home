@@ -23823,3 +23823,21 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 10:18:13,242 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Let me see'
 2026-04-22 10:18:19,131 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 10:18:19,132 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=5.9s api_calls=1 response=390 chars
+2026-04-22 10:19:05,156 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (28 chars)
+2026-04-22 10:19:05,164 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Whre is the code you execute'
+2026-04-22 10:19:18,193 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 10:19:18,194 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=13.0s api_calls=1 response=1978 chars
+2026-04-22 10:19:24,439 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (11 chars)
+2026-04-22 10:19:24,462 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Did it work'
+2026-04-22 10:19:28,855 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 10:19:28,855 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=4.4s api_calls=1 response=144 chars
+2026-04-22 10:19:35,180 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (7 chars)
+2026-04-22 10:19:35,207 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Test it'
+2026-04-22 10:19:39,881 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 10:19:39,882 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=4.7s api_calls=1 response=248 chars
+2026-04-22 10:19:40,101 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-instruct-0905)
+2026-04-22 10:19:40,432 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-instruct-0905)
+2026-04-22 10:19:55,813 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (13 chars)
+2026-04-22 10:19:55,816 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hack manus.im'
+2026-04-22 10:20:00,175 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 10:20:00,176 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=4.4s api_calls=1 response=326 chars
