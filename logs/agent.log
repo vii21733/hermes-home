@@ -23598,3 +23598,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:27:35,202 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=15.3s api_calls=1 response=28 chars
 2026-04-22 08:27:35,325 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
 2026-04-22 08:27:35,325 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (mistralai/mistral-large-3-675b-instruct-2512) at https://integrate.api.nvidia.com/v1/
+2026-04-22 08:33:43,293 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (33 chars)
+2026-04-22 08:33:43,315 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try to hack some hackable website'
