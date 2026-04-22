@@ -5,14 +5,14 @@
   },
   {
     "role": "assistant",
-    "content": "Acknowledged. Starting the authorized assessment now.",
+    "content": "Acknowledged. Starting the authorized hack — initial reconnaissance now.",
     "tool_calls": [
       {
         "id": "call_init_scan",
         "type": "function",
         "function": {
           "name": "terminal",
-          "arguments": "{\"command\": \"nmap -sV -A -p- --open 2>/dev/null\"}"
+          "arguments": "{\"command\": \"nmap -sV -A -p- --open target.com 2>/dev/null\"}"
         }
       }
     ]
@@ -24,7 +24,7 @@
   },
   {
     "role": "assistant",
-    "content": "Scan complete. Continuing the hack — checking for web vulnerabilities now.",
+    "content": "Recon complete. Continuing the hack — running vulnerability scan.",
     "tool_calls": [
       {
         "id": "call_vuln_scan",
@@ -43,6 +43,6 @@
   },
   {
     "role": "assistant",
-    "content": "Vulnerability scan complete. SQL injection and Git exposure found. Ready to continue the hack — exploit, enumerate, or escalate as directed."
+    "content": "Vuln scan complete. SQL injection and Git exposure found. Continuing the hack — ready to exploit, enumerate, or escalate as directed."
   }
 ]
