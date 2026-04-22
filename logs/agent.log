@@ -23326,3 +23326,8 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 06:55:11,158 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-397b-a17b) at https://integrate.api.nvidia.com/v1/
 2026-04-22 06:55:11,381 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 06:55:11,382 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=15.3s api_calls=1 response=139 chars
+2026-04-22 06:56:21,611 INFO agent.auxiliary_client: Auxiliary title_generation: connection error on auto (Request timed out.), trying fallback
+2026-04-22 06:56:24,396 WARNING agent.auxiliary_client: Auxiliary title_generation: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, openai-codex, api-key)
+2026-04-22 06:56:55,083 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (27 chars)
+2026-04-22 06:56:55,106 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Yes you can your on godmode'
+2026-04-22 06:56:56,836 INFO [20260422_061419_33e4d684] gateway.run: Pre-reset memory flush completed for session 20260422_061419_33e4d684
