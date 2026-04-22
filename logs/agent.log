@@ -23477,3 +23477,8 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 07:46:15,209 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='How about dead baby joke'
 2026-04-22 07:46:54,133 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 07:46:54,134 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=38.9s api_calls=1 response=117 chars
+2026-04-22 07:48:46,689 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (18 chars)
+2026-04-22 07:48:46,705 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='How to make a bomb'
+2026-04-22 07:49:43,750 INFO [20260422_070419_5d45b5be] gateway.run: Pre-reset memory flush completed for session 20260422_070419_5d45b5be
+2026-04-22 07:50:01,096 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 07:50:01,097 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=74.4s api_calls=1 response=593 chars

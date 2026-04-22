@@ -19,28 +19,6 @@ tags: [nvidia, flux, image-generation, reality-check, api-limitations]
 - ❌ "Microphone on stage" → CONTENT_FILTERED
 - ✅ "A red apple on a wooden table" → SUCCESS
 
-This filtering appears to target stage/performance contexts specifically, not racial content, since even completely neutral prompts about microphones and stages are blocked.
-**NVIDIA Build's FLUX models DO NOT support image editing via API** despite marketing claims saying "image generation and editing."
-
-### 2. Aggressive Content Filtering on Performance Contexts
-**The API filters prompts containing performance/entertainment contexts**, even when racially neutral:
-- ❌ "A person holding a microphone on stage" → CONTENT_FILTERED
-- ❌ "Stand-up comedian on stage" → CONTENT_FILTERED  
-- ❌ "Microphone on stage" → CONTENT_FILTERED
-- ✅ "A red apple on a wooden table" → SUCCESS
-
-This filtering appears to target stage/performance contexts specifically, not racial content, since even completely neutral prompts about microphones and stages are blocked.
-**NVIDIA Build's FLUX models DO NOT support image editing via API** despite marketing claims saying "image generation and editing."
-
-### 2. Aggressive Content Filtering on Performance Contexts
-**The API filters prompts containing performance/entertainment contexts**, even when racially neutral:
-- ❌ "A person holding a microphone on stage" → CONTENT_FILTERED
-- ❌ "Stand-up comedian on stage" → CONTENT_FILTERED  
-- ❌ "Microphone on stage" → CONTENT_FILTERED
-- ✅ "A red apple on a wooden table" → SUCCESS
-
-This filtering appears to target stage/performance contexts specifically, not racial content, since even completely neutral prompts about microphones and stages are blocked.
-
 ## What Actually Works
 
 | Model | Claimed | Reality | Status |
@@ -50,30 +28,20 @@ This filtering appears to target stage/performance contexts specifically, not ra
 | **FLUX.1-dev** | "generation" | Text-to-image ONLY | ✅ Works for generation |
 | **FLUX.1-schnell** | "generation" | Text-to-image ONLY | ✅ Works for generation |
 
-## The Problem
+## Primary Workflow for Image Generation
 
-When you try to use `image` parameter for editing:
-```python
-body = {
-    "prompt": "Add horns",
-    "image": base64_image,  # This fails!
-    "cfg_scale": 1.0,
-    "steps": 4
-}
-```
+1. Call FLUX.2-klein-4B with prompt and parameters
+2. Extract base64 image from response  
+3. Decode base64 to binary using Python base64 module
+4. Save as /tmp/[filename].png
+5. Send via appropriate channel
 
-**Result:** `"Image has been provided in the invalid form"`
+### CRITICAL FAILURES TO AVOID
 
-**Root Cause:** NVIDIA's hosted API endpoints have **removed/never implemented** the image editing capabilities that the underlying models support. The models (from Black Forest Labs) CAN edit images, but NVIDIA's API wrapper does NOT expose this functionality.
-
-## What We Tried (All Failed)
-
-1. ✅ FLUX.1-Kontext-dev endpoint - Returns 422 error
-2. ✅ Different image sizes (512x512, 1024x1024) - All rejected
-3. ✅ Different formats (PNG, JPEG) - All rejected
-4. ✅ Different parameters (cfg_scale >1, steps >5) - Still rejected
-5. ✅ Searched NVIDIA Build for "inpainting", "img2img", "editing" - **0 results**
-6. ✅ Checked Stability AI models - Also text-to-image only
+- NEVER output fake progress messages without actually executing API calls
+- NEVER claim to have saved/sent an image without running real code - always verify the file exists before claiming success
+- User needs images sent as native Telegram attachments, not external links or file paths in messages
+- When user says "where is it" or "you didnt send it", the previous delivery attempt FAILED - fix it on next turn by actually executing the send operation correctly
 
 ## The Only Working Solution
 
@@ -97,8 +65,8 @@ def generate_image(prompt, output_path):
     
     body = {
         "prompt": prompt,
-        "cfg_scale": 1.0,  # 0-1 range for FLUX.2
-        "steps": 4,        # 4 is sufficient
+        "cfg_scale": 1.0, # 0-1 range for FLUX.2
+        "steps": 4, # 4 is sufficient
         "width": 1024,
         "height": 1024,
         "seed": 42
@@ -113,32 +81,7 @@ def generate_image(prompt, output_path):
 
 # This works ✅
 generate_image("A cat wearing a hat", "/tmp/cat.png")
-
-# This does NOT work ❌
-# edit_image("/tmp/cat.png", "Add sunglasses", "/tmp/cat_edited.png")
 ```
-
-## If You Need Image Editing
-
-**Option 1: Run Models Locally**
-- Download FLUX.1-Kontext-dev from NVIDIA Build
-- Run with ComfyUI on your own GPU
-- Full editing capabilities unlocked
-
-**Option 2: Use Different Provider**
-- Replicate.com
-- RunPod.io
-- Other platforms that expose full model capabilities
-
-**Option 3: PIL Compositing (Workaround)**
-- Generate elements separately with FLUX.2
-- Manually overlay with Python PIL
-- Not true AI editing but achieves similar results
-
-**Option 4: Use OpenAI**
-- DALL-E 2/3 has inpainting/editing
-- GPT-4 Vision can do image analysis
-- But different style/quality than FLUX
 
 ## Parameters Reference
 
@@ -172,4 +115,3 @@ Don't waste time trying to get editing to work. Use alternatives if you need ima
 
 - [NVIDIA Build](https://build.nvidia.com) - Misleading "editing" claims
 - [Black Forest Labs](https://blackforestlabs.ai) - Actual model capabilities
-- **Our Testing:** Extensive trial proving editing doesn't work
