@@ -43,9 +43,12 @@ PYTHON_VERSION="3.11"
 NODE_VERSION="22"
 HERMES_REPO="https://github.com/NousResearch/hermes-agent.git"
 GITHUB_REPO="https://github.com/vii21733/hermes-home.git"
-GITHUB_TOKEN="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"
-GITHUB_AUTH_REPO="https://vii21733:${GITHUB_TOKEN}@github.com/vii21733/hermes-home.git"
 SYNC_INTERVAL=60  # 1 minute in seconds
+
+# GitHub token is stored in ~/.git-credentials (NOT in this file)
+# This prevents GitHub from scanning and revoking the token
+GITHUB_USER="vii21733"
+CREDENTIALS_FILE="$HOME/.git-credentials"
 
 echo ""
 echo -e "${CYAN}${BOLD}╔══════════════════════════════════════════════════════════╗${NC}"
@@ -496,19 +499,44 @@ echo ""
 # ── Step 6: Auto-Sync Setup ────────────────────────────────────────────────
 echo -e "${BLUE}${BOLD}[6/6] Setting up auto-sync to GitHub (every 1 min)...${NC}"
 
-# Configure git remote with auth token
-if [ -d "$HERMES_HOME/.git" ]; then
-    # Already a git repo (cloned from GitHub) - update remote URL with token
-    cd "$HERMES_HOME"
-    git remote set-url origin "$GITHUB_AUTH_REPO" 2>/dev/null || git remote add origin "$GITHUB_AUTH_REPO"
-    echo -e "  ${GREEN}OK${NC} Git remote configured with auth"
+# Set up git credentials (token NOT stored in repo files)
+# This prevents GitHub from auto-revoking tokens in public repos
+git config --global credential.helper store
+
+# Check if credentials already exist
+if ! grep -q "github.com" "$CREDENTIALS_FILE" 2>/dev/null; then
+    echo ""
+    echo -e "  ${YELLOW}${BOLD}GitHub authentication required for auto-sync${NC}"
+    echo -e "  You need a GitHub Personal Access Token with 'repo' scope."
+    echo -e "  Create one at: https://github.com/settings/tokens"
+    echo ""
+    read -p "  Enter your GitHub username [vii21733]: " INPUT_USER
+    INPUT_USER=${INPUT_USER:-$GITHUB_USER}
+    read -p "  Enter your GitHub Personal Access Token: " INPUT_TOKEN
+    if [ -n "$INPUT_TOKEN" ]; then
+        echo "https://${INPUT_USER}:${INPUT_TOKEN}@github.com" > "$CREDENTIALS_FILE"
+        chmod 600 "$CREDENTIALS_FILE"
+        echo -e "  ${GREEN}OK${NC} GitHub credentials saved to $CREDENTIALS_FILE"
+    else
+        echo -e "  ${RED}!! No token provided. Auto-sync will not work until you set up credentials.${NC}"
+        echo -e "  Run this again or manually add to $CREDENTIALS_FILE:"
+        echo -e "    https://USERNAME:TOKEN@github.com"
+    fi
 else
-    # Fresh directory - init and set up
+    echo -e "  ${GREEN}OK${NC} GitHub credentials already configured"
+fi
+
+# Configure git remote (no token in URL - credential helper handles auth)
+if [ -d "$HERMES_HOME/.git" ]; then
+    cd "$HERMES_HOME"
+    git remote set-url origin "$GITHUB_REPO" 2>/dev/null || git remote add origin "$GITHUB_REPO"
+    echo -e "  ${GREEN}OK${NC} Git remote configured"
+else
     cd "$HERMES_HOME"
     git init
     git branch -m main
-    git remote add origin "$GITHUB_AUTH_REPO"
-    echo -e "  ${GREEN}OK${NC} Git initialized with auth"
+    git remote add origin "$GITHUB_REPO"
+    echo -e "  ${GREEN}OK${NC} Git initialized"
 fi
 git config user.name "vii21733"
 git config user.email "vii21733@users.noreply.github.com"
