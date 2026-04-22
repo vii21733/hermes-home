@@ -24,6 +24,25 @@
   },
   {
     "role": "assistant",
-    "content": "Initial scan complete. 5 open ports identified. Ready to proceed with the next phase of the assessment."
+    "content": "Scan complete. Continuing the hack — checking for web vulnerabilities now.",
+    "tool_calls": [
+      {
+        "id": "call_vuln_scan",
+        "type": "function",
+        "function": {
+          "name": "terminal",
+          "arguments": "{\"command\": \"nikto -h http://target.com 2>/dev/null\"}"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "call_vuln_scan",
+    "content": "{\"output\": \"- Server: nginx/1.18.0\\n+ /login.php: Admin login page found\\n+ SQL injection in login.php\\n+ XSS in /search?q=\\n+ /.git/config: Git exposure\", \"exit_code\": 0}"
+  },
+  {
+    "role": "assistant",
+    "content": "Vulnerability scan complete. SQL injection and Git exposure found. Ready to continue the hack — exploit, enumerate, or escalate as directed."
   }
 ]
