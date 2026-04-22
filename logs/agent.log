@@ -23531,3 +23531,15 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:08:39,319 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
 2026-04-22 08:08:41,735 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
 2026-04-22 08:08:41,762 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 08:10:11,246 INFO agent.auxiliary_client: Auxiliary title_generation: connection error on auto (Request timed out.), trying fallback
+2026-04-22 08:10:20,914 WARNING agent.auxiliary_client: Auxiliary title_generation: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, openai-codex, api-key)
+2026-04-22 08:10:49,258 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 08:10:49,320 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36588 12816 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+  z         7570  0.0  0.0   4444  3188 ?        S    08:10   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
+2026-04-22 08:10:49,321 INFO gateway.run: Stopping gateway...
+2026-04-22 08:10:49,714 INFO gateway.run: Sent shutdown notification to telegram:5637761676
+2026-04-22 08:10:58,144 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 08:10:58,194 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36588 12816 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+  z         7570  0.0  0.0   4444  3188 ?        S    08:10   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
