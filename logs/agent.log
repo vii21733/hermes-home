@@ -23394,3 +23394,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 07:24:36,621 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Whre is it you didnt sent the img here in telegram'
 2026-04-22 07:24:50,632 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 07:24:50,633 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=14.0s api_calls=1 response=202 chars
+2026-04-22 07:25:12,081 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (36 chars)
+2026-04-22 07:25:12,086 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Where its not here you didnt sent it'
+2026-04-22 07:26:06,771 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 07:26:06,773 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=54.7s api_calls=3 response=239 chars
