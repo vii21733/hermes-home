@@ -23524,3 +23524,10 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:04:49,840 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a jone about dead baby'
 2026-04-22 08:04:50,452 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 08:04:53,344 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 08:08:38,095 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 3 (stop_command)
+2026-04-22 08:08:38,095 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-22 08:08:38,650 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 2 is no longer current
+2026-04-22 08:08:39,319 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 08:08:39,319 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 08:08:41,735 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 08:08:41,762 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
