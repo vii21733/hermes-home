@@ -24033,3 +24033,14 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 12:12:08,991 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='You use the flux 2 and generate img and send here'
 2026-04-22 12:14:36,776 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 12:14:36,777 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=147.8s api_calls=4 response=64 chars
+2026-04-22 12:47:13,647 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 12:47:13,690 INFO gateway.run: Shutdown diagnostic — no other hermes processes found
+2026-04-22 12:47:13,691 INFO gateway.run: Stopping gateway...
+2026-04-22 12:47:14,287 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 12:47:14,288 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 12:47:14,298 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 12:47:14,336 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 12:47:14,336 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 12:47:14,596 INFO gateway.run: Gateway stopped
+2026-04-22 12:47:14,597 INFO gateway.run: Cron ticker stopped
+2026-04-22 12:47:14,597 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
