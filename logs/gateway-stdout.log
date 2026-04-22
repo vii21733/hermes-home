@@ -190,3 +190,4 @@
 ⚡ Interrupted during API call.
 ⚠️ Connection to provider dropped (RemoteProtocolError). Reconnecting… (attempt 2/3)
 🔄 Reconnected — resuming…
+⚠️ Model returned empty after tool calls — nudging to continue
