@@ -23515,3 +23515,8 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:02:30,736 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 08:02:30,744 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 08:02:30,793 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 08:04:10,410 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 08:04:11,213 INFO gateway.platforms.base: [Telegram] Sending response (230 chars) to 5637761676
+2026-04-22 08:04:11,598 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 08:04:13,422 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 08:04:37,476 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
