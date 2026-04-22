@@ -22818,3 +22818,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 01:57:38,825 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=151.4s api_calls=6 response=304 chars
 2026-04-22 01:57:39,314 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 01:57:39,730 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 02:09:40,989 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (55 chars)
+2026-04-22 02:09:41,007 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Check my hermes version and see if it has a new version'
