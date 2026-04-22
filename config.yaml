@@ -1,9 +1,9 @@
 model:
-  default: moonshotai/kimi-k2.5
+  default: minimaxai/minimax-m2.7
   provider: nvidia
   base_url: https://integrate.api.nvidia.com/v1
   max_tokens: 32768
-  context_length: 262144
+  context_length: 204800
 providers: {}
 fallback_providers: []
 credential_pool_strategies: {}

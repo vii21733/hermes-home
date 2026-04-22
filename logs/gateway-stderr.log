@@ -77,3 +77,5 @@ WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
   z          459  0.0  0.1  36588 12816 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
   z          459  0.0  0.1  36588 12816 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36588 12816 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
