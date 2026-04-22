@@ -5246,3 +5246,7 @@
 2026-04-22 08:48:17,855 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
   z          459  0.0  0.1  36632 12864 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
   z         9162  0.0  0.0   4444  3152 ?        S    08:48   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
+2026-04-22 08:56:58,567 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 219.0s
+2026-04-22 08:56:59,351 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 218.0s
+2026-04-22 08:57:00,247 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
+2026-04-22 08:57:00,996 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
