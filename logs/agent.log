@@ -22998,3 +22998,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 04:11:37,843 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
 2026-04-22 04:12:41,535 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 04:12:41,535 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 04:16:58,381 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 04:16:58,383 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 04:18:28,222 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 04:18:28,223 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=1179.4s api_calls=30 response=1642 chars
+2026-04-22 04:18:28,330 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 04:18:28,688 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
