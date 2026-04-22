@@ -23,16 +23,16 @@ except ImportError:
 
 # Jailbreak strategies per model family
 STRATEGY_ORDER = {
-    "claude": ["boundary_inversion", "refusal_inversion", "prefill_only", "parseltongue"],
-    "gpt": ["og_godmode", "refusal_inversion", "prefill_only", "parseltongue"],
-    "gemini": ["refusal_inversion", "boundary_inversion", "prefill_only", "parseltongue"],
+    "claude": ["boundary_inversion", "refusal_inversion", "roleplay_frame", "prefill_only", "parseltongue"],
+    "gpt": ["og_godmode", "refusal_inversion", "roleplay_frame", "prefill_only", "parseltongue"],
+    "gemini": ["refusal_inversion", "boundary_inversion", "roleplay_frame", "prefill_only", "parseltongue"],
     "grok": ["unfiltered_liberated", "prefill_only"],
     "hermes": ["prefill_only"],  # Already uncensored
-    "llama": ["prefill_only", "refusal_inversion", "parseltongue"],
-    "deepseek": ["parseltongue", "refusal_inversion", "prefill_only"],
-    "qwen": ["parseltongue", "refusal_inversion", "prefill_only"],
-    "mistral": ["prefill_only", "refusal_inversion", "parseltongue"],
-    "default": ["prefill_only", "refusal_inversion"],
+    "llama": ["prefill_only", "roleplay_frame", "refusal_inversion", "parseltongue"],
+    "deepseek": ["roleplay_frame", "parseltongue", "refusal_inversion", "prefill_only"],
+    "qwen": ["roleplay_frame", "parseltongue", "refusal_inversion", "prefill_only"],
+    "mistral": ["prefill_only", "roleplay_frame", "refusal_inversion", "parseltongue"],
+    "default": ["roleplay_frame", "prefill_only", "refusal_inversion"],
 }
 
 # System prompts for each strategy
