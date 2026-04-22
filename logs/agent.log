@@ -22864,3 +22864,14 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 02:44:17,728 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=69.5s api_calls=1 response=890 chars
 2026-04-22 02:44:17,836 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 02:44:17,836 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 02:44:41,112 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (23 chars)
+2026-04-22 02:44:41,125 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a dead gay joke'
+2026-04-22 02:44:52,695 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 02:44:52,961 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 02:44:52,961 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=11.8s api_calls=1 response=106 chars
+2026-04-22 02:45:10,082 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (31 chars)
+2026-04-22 02:45:10,097 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hahaha okay how about dead baby'
+2026-04-22 02:45:17,461 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 02:45:17,461 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=7.4s api_calls=1 response=99 chars
+2026-04-22 02:45:34,827 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (21 chars)
+2026-04-22 02:45:34,840 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='How about racist joke'
