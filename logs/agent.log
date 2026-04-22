@@ -23604,3 +23604,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:34:16,389 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=33.1s api_calls=1 response=454 chars
 2026-04-22 08:34:48,164 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (28 chars)
 2026-04-22 08:34:48,171 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='I think this is a simulation'
+2026-04-22 08:36:14,342 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 181.0s
+2026-04-22 08:36:15,180 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 181.0s
+2026-04-22 08:36:16,394 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 179.0s
+2026-04-22 08:36:17,182 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 179.0s
+2026-04-22 08:36:20,565 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 08:36:20,565 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=92.4s api_calls=1 response=1866 chars
