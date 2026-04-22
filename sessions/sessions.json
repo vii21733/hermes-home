@@ -1,9 +1,9 @@
 {
   "agent:main:telegram:dm:5637761676": {
     "session_key": "agent:main:telegram:dm:5637761676",
-    "session_id": "20260422_101531_705440fb",
-    "created_at": "2026-04-22T10:15:31.904399",
-    "updated_at": "2026-04-22T10:22:10.232127",
+    "session_id": "20260422_115800_9c973f45",
+    "created_at": "2026-04-22T11:58:00.686848",
+    "updated_at": "2026-04-22T11:59:10.991333",
     "display_name": "N \u24c2\ufe0f MEMES MyGate Network",
     "platform": "telegram",
     "chat_type": "dm",
@@ -12,7 +12,7 @@
     "cache_read_tokens": 0,
     "cache_write_tokens": 0,
     "total_tokens": 0,
-    "last_prompt_tokens": 15747,
+    "last_prompt_tokens": 13867,
     "estimated_cost_usd": 0.0,
     "cost_status": "unknown",
     "memory_flushed": false,

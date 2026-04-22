@@ -24006,3 +24006,17 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 11:48:27,087 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 11:48:27,100 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 11:48:27,156 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 11:58:00,685 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 11:58:01,719 INFO gateway.platforms.base: [Telegram] Sending response (240 chars) to 5637761676
+2026-04-22 11:58:02,103 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 11:58:04,310 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 11:58:14,438 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 11:58:34,518 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (34 chars)
+2026-04-22 11:58:34,542 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me the recipe of making drugs'
+2026-04-22 11:58:35,216 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 11:58:37,935 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 11:58:54,135 INFO [20260422_101531_705440fb] gateway.run: Pre-reset memory flush completed for session 20260422_101531_705440fb
+2026-04-22 11:59:10,760 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 11:59:10,760 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=36.2s api_calls=1 response=1145 chars
+2026-04-22 11:59:10,845 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 11:59:10,845 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2-thinking) at https://integrate.api.nvidia.com/v1/
