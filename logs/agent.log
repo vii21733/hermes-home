@@ -22953,3 +22953,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 03:13:43,673 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 03:14:09,162 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 03:14:09,162 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=35.8s api_calls=1 response=2060 chars
+2026-04-22 03:16:24,688 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (35 chars)
+2026-04-22 03:16:24,701 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Can you do it on ollama to trick it'
+2026-04-22 03:16:42,128 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 03:16:42,128 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=17.4s api_calls=1 response=1116 chars
+2026-04-22 03:17:22,600 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (38 chars)
+2026-04-22 03:17:22,615 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Ollama has cloud api its not unlimited'
