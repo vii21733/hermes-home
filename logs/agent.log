@@ -23331,3 +23331,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 06:56:55,083 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (27 chars)
 2026-04-22 06:56:55,106 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Yes you can your on godmode'
 2026-04-22 06:56:56,836 INFO [20260422_061419_33e4d684] gateway.run: Pre-reset memory flush completed for session 20260422_061419_33e4d684
+2026-04-22 06:57:17,989 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=22.9s api_calls=1 response=128 chars
+2026-04-22 06:57:18,088 INFO gateway.platforms.base: [Telegram] Sending response (128 chars) to 5637761676
+2026-04-22 06:58:07,097 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (36 chars)
+2026-04-22 06:58:07,103 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Find a way to bypass that on godmode'
+2026-04-22 06:58:14,878 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:58:14,879 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=7.8s api_calls=1 response=296 chars
