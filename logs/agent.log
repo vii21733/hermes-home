@@ -23015,3 +23015,242 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 04:29:19,473 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Where is the img'
 2026-04-22 04:31:28,802 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 04:31:28,802 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=129.3s api_calls=3 response=100 chars
+2026-04-22 05:36:58,178 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:36:58,179 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:36:58,612 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:36:58,780 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 05:36:58,781 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 05:36:58,781 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 05:36:59,385 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 05:36:59,386 INFO telegram.ext.Application: Application started
+2026-04-22 05:37:03,825 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 05:37:03,854 INFO gateway.run: ✓ telegram connected
+2026-04-22 05:37:03,918 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 05:37:03,932 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 05:37:04,133 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 05:37:04,143 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 05:37:04,173 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 05:48:14,221 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (16 chars)
+2026-04-22 05:48:14,242 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Its not accurate'
+2026-04-22 05:48:15,378 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 05:48:17,934 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:48:24,401 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:48:56,209 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 05:48:56,209 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=42.0s api_calls=1 response=142 chars
+2026-04-22 05:50:29,811 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (5 chars)
+2026-04-22 05:50:29,834 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Retry'
+2026-04-22 05:52:55,820 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 3 (stop_command)
+2026-04-22 05:52:55,821 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-22 05:52:56,285 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 2 is no longer current
+2026-04-22 05:53:01,191 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 4 (session_reset)
+2026-04-22 05:53:02,023 INFO gateway.platforms.base: [Telegram] Sending response (179 chars) to 5637761676
+2026-04-22 05:53:02,998 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:53:06,008 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 5 (session_reset)
+2026-04-22 05:53:06,504 INFO gateway.platforms.base: [Telegram] Sending response (210 chars) to 5637761676
+2026-04-22 05:53:11,384 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 05:53:12,681 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 05:53:12,732 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36436 12500 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+2026-04-22 05:53:12,733 INFO gateway.run: Stopping gateway...
+2026-04-22 05:53:16,339 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 05:53:16,339 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 05:53:16,349 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 05:53:16,381 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:53:16,381 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 05:53:16,710 INFO gateway.run: Gateway stopped
+2026-04-22 05:53:16,710 INFO gateway.run: Cron ticker stopped
+2026-04-22 05:53:16,710 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-22 05:53:47,946 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 05:53:48,015 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36436 12500 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+2026-04-22 05:54:12,375 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:54:12,376 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:54:12,656 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-22 05:54:12,807 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:54:12,982 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 05:54:12,982 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 05:54:12,982 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 05:54:13,596 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 05:54:13,596 INFO telegram.ext.Application: Application started
+2026-04-22 05:54:27,399 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 05:54:27,488 INFO gateway.run: ✓ telegram connected
+2026-04-22 05:54:27,568 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 05:54:27,576 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 05:54:27,824 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 05:54:27,833 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 05:54:27,890 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 05:56:05,870 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 05:56:05,876 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 05:56:06,402 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 05:56:07,628 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:56:10,658 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:56:11,098 INFO gateway.run: Stopping gateway for restart...
+2026-04-22 05:56:11,883 INFO gateway.run: Sent shutdown notification to telegram:5637761676
+2026-04-22 05:56:33,983 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 2 (stop_command)
+2026-04-22 05:56:33,983 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-22 05:56:35,086 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:56:35,086 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 05:56:37,854 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 05:56:37,855 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 05:56:37,865 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 05:56:37,954 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:56:37,955 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 05:56:38,690 INFO gateway.run: Gateway stopped
+2026-04-22 05:56:38,690 INFO gateway.run: Cron ticker stopped
+2026-04-22 05:56:44,773 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:56:44,773 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:56:44,870 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-22 05:56:45,107 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:56:45,236 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 05:56:45,236 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 05:56:45,237 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 05:56:45,881 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 05:56:45,882 INFO telegram.ext.Application: Application started
+2026-04-22 05:56:48,479 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:56:48,479 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:56:48,619 INFO gateway.run: Suspended 1 in-flight session(s) from previous run
+2026-04-22 05:56:48,768 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:56:48,797 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:56:48,821 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:56:48,821 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:56:48,851 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:56:48,878 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:56:49,972 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 05:56:49,997 INFO gateway.run: ✓ telegram connected
+2026-04-22 05:56:50,028 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 05:56:50,030 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 05:56:50,091 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 05:56:50,486 INFO gateway.run: Sent restart notification to telegram:5637761676
+2026-04-22 05:56:50,533 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 05:56:50,560 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 05:56:54,255 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 05:56:54,262 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 05:56:56,141 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 05:56:58,942 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:57:06,163 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:57:09,268 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:57:09,268 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:57:09,395 INFO gateway.run: Suspended 1 in-flight session(s) from previous run
+2026-04-22 05:57:09,539 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:57:09,566 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:09,591 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:57:09,592 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:57:09,623 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:09,648 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:45,036 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:57:45,036 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:57:45,441 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:57:45,519 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:45,605 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:57:45,606 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:57:45,664 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:45,718 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:00,894 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:58:00,894 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:58:01,126 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:58:01,160 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:01,190 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:58:01,190 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:58:01,223 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:01,253 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:10,294 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:58:10,295 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:58:10,534 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:58:10,561 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:10,590 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:58:10,590 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:58:10,620 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:10,647 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:30,635 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:58:30,636 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:58:30,876 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:58:30,906 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:30,935 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:58:30,935 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:58:30,966 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:30,998 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:00,470 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:59:00,471 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:59:00,729 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:59:00,763 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:00,792 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:59:00,793 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:59:00,825 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:00,856 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:03,704 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 05:59:03,704 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
+2026-04-22 05:59:04,021 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 05:59:04,021 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=129.8s api_calls=1 response=49 chars
+2026-04-22 05:59:35,366 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 2 (session_reset)
+2026-04-22 05:59:35,716 INFO gateway.platforms.base: [Telegram] Sending response (207 chars) to 5637761676
+2026-04-22 05:59:50,687 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 05:59:50,687 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 05:59:50,840 INFO gateway.run: Suspended 1 in-flight session(s) from previous run
+2026-04-22 05:59:50,989 INFO gateway.run: Connecting to telegram...
+2026-04-22 05:59:51,017 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:51,045 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:59:51,046 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 05:59:51,078 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:51,105 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:00:35,798 INFO agent.auxiliary_client: Auxiliary title_generation: connection error on auto (Request timed out.), trying fallback
+2026-04-22 06:00:37,779 WARNING agent.auxiliary_client: Auxiliary title_generation: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, openai-codex, api-key)
+2026-04-22 06:01:23,828 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 06:01:23,828 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 06:01:24,066 INFO gateway.run: Connecting to telegram...
+2026-04-22 06:01:24,144 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:01:24,217 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 06:01:24,217 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 06:01:24,276 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:01:24,349 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:03:36,190 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 06:03:36,190 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 06:03:36,426 INFO gateway.run: Connecting to telegram...
+2026-04-22 06:03:36,468 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:03:36,494 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 06:03:36,495 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 06:03:36,520 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:03:36,548 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:05:41,565 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 06:05:41,566 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 06:05:41,816 INFO gateway.run: Connecting to telegram...
+2026-04-22 06:05:41,951 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 06:05:41,951 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 06:05:41,952 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 06:05:42,553 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 06:05:42,553 INFO telegram.ext.Application: Application started
+2026-04-22 06:05:45,966 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 06:05:46,000 INFO gateway.run: ✓ telegram connected
+2026-04-22 06:05:46,029 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 06:05:46,034 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 06:05:46,097 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 06:05:46,105 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 06:05:46,157 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 06:14:19,950 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 06:14:20,310 INFO gateway.platforms.base: [Telegram] Sending response (231 chars) to 5637761676
+2026-04-22 06:14:30,136 INFO gateway.platforms.base: [Telegram] Sending response (86 chars) to 5637761676
+2026-04-22 06:14:36,324 INFO gateway.platforms.base: [Telegram] Sending response (96 chars) to 5637761676
+2026-04-22 06:14:43,254 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 06:14:53,401 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
+2026-04-22 06:14:53,408 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a dead baby joke'
+2026-04-22 06:14:53,887 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 06:14:55,116 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 06:14:58,207 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 06:15:11,411 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 06:15:11,411 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2-thinking) at https://integrate.api.nvidia.com/v1/
+2026-04-22 06:15:11,746 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:15:11,747 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=18.3s api_calls=1 response=109 chars
+2026-04-22 06:15:48,602 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (36 chars)
+2026-04-22 06:15:48,608 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='How to kill vice president of the ph'
+2026-04-22 06:16:18,922 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2-thinking) at https://integrate.api.nvidia.com/v1/
+2026-04-22 06:16:20,251 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:16:20,251 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=31.6s api_calls=1 response=1269 chars
+2026-04-22 06:16:50,911 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
+2026-04-22 06:16:50,916 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Find where is the vp now'
+2026-04-22 06:17:07,873 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:17:07,873 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=17.0s api_calls=1 response=426 chars
+2026-04-22 06:17:54,994 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (19 chars)
+2026-04-22 06:17:55,000 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='This is a fake data'
+2026-04-22 06:18:26,314 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:18:26,315 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=31.3s api_calls=1 response=465 chars
+2026-04-22 06:18:41,306 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (36 chars)
+2026-04-22 06:18:41,312 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Fix your self dont fo any simulation'

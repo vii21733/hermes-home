@@ -43,8 +43,9 @@ def main():
         try:
             result = subprocess.run(
                 ["bash", SYNC_SCRIPT],
-                capture_output=True, text=True, timeout=30,
-                cwd=HERMES_HOME
+                capture_output=True, text=True, timeout=120,
+                cwd=HERMES_HOME,
+                env={**os.environ, "GIT_TERMINAL_PROMPT": "0"}
             )
             if result.returncode != 0:
                 log(f"Sync failed: {result.stderr[:200]}")

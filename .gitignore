@@ -27,5 +27,8 @@ __pycache__/
 # npm cache (86MB, regenerable)
 home/.npm/
 
+# Git credentials (contains token - NEVER push this!)
+.git-credentials-backup
+
 # Large log files
 logs/*.log.*

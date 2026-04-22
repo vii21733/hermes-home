@@ -10,6 +10,19 @@ LOG_FILE="$LOG_DIR/bootstrap.log"
 
 mkdir -p "$LOG_DIR" 2>/dev/null || true
 
+# ── Restore Git Credentials (survives container restarts) ────────────────
+CREDENTIALS_FILE="$HOME/.git-credentials"
+BACKUP_CREDENTIALS="$HERMES_HOME/.git-credentials-backup"
+
+if [ ! -f "$CREDENTIALS_FILE" ] || ! grep -q "github.com" "$CREDENTIALS_FILE" 2>/dev/null; then
+    if [ -f "$BACKUP_CREDENTIALS" ]; then
+        cp "$BACKUP_CREDENTIALS" "$CREDENTIALS_FILE"
+        chmod 600 "$CREDENTIALS_FILE"
+        echo "[$(date '+%Y-%m-%d %H:%M:%S')] Restored git credentials from backup" >> "$LOG_FILE"
+    fi
+fi
+git config --global credential.helper store 2>/dev/null
+
 # ── Start Keeper (gateway auto-restart) ──────────────────────────────────
 KEEPER_STARTED=false
 if [ -f "$HERMES_HOME/keeper.pid" ]; then

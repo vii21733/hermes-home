@@ -5172,3 +5172,48 @@
   z        11938  0.0  0.1  36324 13124 ?        S    02:31   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
   z        11944  0.0  0.1  36020 12696 ?        S    02:31   0:00 python3 /home/z/my-project/hermes-home/sync-daemon.py
   z        13413  0.0  0.0   4444  3176 ?        S    03:12   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
+2026-04-22 05:53:12,732 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36436 12500 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+2026-04-22 05:53:48,015 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36436 12500 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+2026-04-22 05:56:48,797 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:56:48,821 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:56:48,851 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:56:48,878 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:09,566 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:09,591 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:57:09,623 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:09,648 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:45,519 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:45,605 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:57:45,664 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:57:45,718 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:01,160 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:01,190 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:58:01,223 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:01,253 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:10,561 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:10,590 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:58:10,620 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:10,647 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:30,906 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:30,935 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:58:30,966 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:58:30,998 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:00,763 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:00,792 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:59:00,825 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:00,856 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:51,017 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:51,045 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 05:59:51,078 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 05:59:51,105 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:00:37,779 WARNING agent.auxiliary_client: Auxiliary title_generation: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, openai-codex, api-key)
+2026-04-22 06:01:24,144 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:01:24,217 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 06:01:24,276 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:01:24,349 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:03:36,468 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:03:36,494 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 06:03:36,520 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.
+2026-04-22 06:03:36,548 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 999). Stop the other gateway first.

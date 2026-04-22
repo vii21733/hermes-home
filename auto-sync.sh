@@ -1,9 +1,12 @@
 #!/bin/bash
 # Auto-sync hermes-home to GitHub every 1 minute
-# Runs via sync-daemon.sh
+# Runs via sync-daemon.py
 
 HERMES_HOME="$(cd "$(dirname "$0")" && pwd)"
 cd "$HERMES_HOME" || exit 1
+
+# Ensure git won't hang waiting for interactive auth
+export GIT_TERMINAL_PROMPT=0
 
 # Add all changes
 git add -A 2>/dev/null
