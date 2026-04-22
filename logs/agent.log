@@ -22970,3 +22970,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 03:25:44,486 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Ollama  does have kimi k2.6 check ot'
 2026-04-22 03:30:53,946 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 03:30:53,946 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=309.5s api_calls=8 response=3132 chars
+2026-04-22 03:34:58,850 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (27 chars)
+2026-04-22 03:34:58,867 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Okay make a solution for it'
