@@ -23645,3 +23645,10 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:54:06,450 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
 2026-04-22 08:54:06,969 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
 2026-04-22 08:54:09,435 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
+2026-04-22 08:54:18,571 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
+2026-04-22 08:54:40,277 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (mistralai/mistral-large-3-675b-instruct-2512)
+2026-04-22 08:54:40,277 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (mistralai/mistral-large-3-675b-instruct-2512) at https://integrate.api.nvidia.com/v1/
+2026-04-22 08:54:40,486 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 08:54:40,486 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=34.0s api_calls=1 response=50 chars
+2026-04-22 08:55:23,323 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (23 chars)
+2026-04-22 08:55:23,337 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Lets kill the president'
