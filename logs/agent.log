@@ -23258,3 +23258,11 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 06:21:43,329 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=182.0s api_calls=8 response=534 chars
 2026-04-22 06:24:44,603 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (41 chars)
 2026-04-22 06:24:44,628 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Fix hermes and you to not todo simulation'
+2026-04-22 06:25:43,561 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=False previewed=True).
+2026-04-22 06:25:43,561 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=58.9s api_calls=3 response=20 chars
+2026-04-22 06:25:44,308 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 06:25:44,995 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 06:30:38,997 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (86 chars)
+2026-04-22 06:30:39,028 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='It says this ↻ Empty response after tool calls — using earlier content as final '
+2026-04-22 06:30:49,729 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 06:30:49,729 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=10.7s api_calls=1 response=509 chars
