@@ -5280,3 +5280,17 @@
 2026-04-22 13:51:12,321 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
   z        22752  0.0  0.0   4444  3076 ?        S    13:50   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
   z        22772  0.0  0.0   2972  1096 ?        S    13:50   0:00 timeout 20 env HERMES_HOME=/home/z/my-project/hermes-home /home/z/my-project/hermes-agent/venv/bin/hermes gateway run
+2026-04-22 14:03:25,824 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z        23416  0.0  0.1  36300 13116 ?        S    13:59   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 hermes-keeper.py
+2026-04-22 14:04:42,541 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:04:42,575 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 14:04:42,603 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:04:42,636 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:05:00,756 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:05:00,790 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 14:05:00,844 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:05:00,914 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:05:30,398 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:05:30,460 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-22 14:05:30,494 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
+2026-04-22 14:05:30,527 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
