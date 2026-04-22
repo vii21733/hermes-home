@@ -24439,3 +24439,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 23:22:48,434 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=6.3s api_calls=1 response=408 chars
 2026-04-22 23:22:59,782 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (27 chars)
 2026-04-22 23:22:59,783 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Eats not eating the carrots'
+2026-04-22 23:23:37,782 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 23:23:37,784 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=38.0s api_calls=5 response=357 chars
