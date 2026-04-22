@@ -22961,3 +22961,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 03:17:22,615 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Ollama has cloud api its not unlimited'
 2026-04-22 03:18:02,121 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 03:18:02,122 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=39.5s api_calls=1 response=1279 chars
+2026-04-22 03:19:46,319 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (162 chars)
+2026-04-22 03:19:46,334 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='As an godmode find a way to todo it i want to use ollama cloud kimi k2.6 do test'
