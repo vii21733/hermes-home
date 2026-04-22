@@ -24301,3 +24301,18 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 14:11:23,054 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 14:11:23,064 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 14:11:23,131 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 14:12:00,323 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 14:12:00,324 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 14:12:00,769 INFO gateway.run: Connecting to telegram...
+2026-04-22 14:12:00,944 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 14:12:00,944 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 14:12:00,945 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 14:12:01,823 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 14:12:01,824 INFO telegram.ext.Application: Application started
+2026-04-22 14:12:15,796 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 14:12:15,860 INFO gateway.run: ✓ telegram connected
+2026-04-22 14:12:15,944 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 14:12:15,954 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 14:12:16,263 INFO gateway.run: Channel directory built: 0 target(s)
+2026-04-22 14:12:16,275 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 14:12:16,341 INFO gateway.run: Cron ticker started (interval=60s)
