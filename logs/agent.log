@@ -23660,3 +23660,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:56:59,351 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 218.0s
 2026-04-22 08:57:00,247 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
 2026-04-22 08:57:00,996 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
+2026-04-22 08:58:18,685 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 139.0s: Flood control exceeded. Retry in 139 seconds
+2026-04-22 08:58:23,312 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=126.3s api_calls=1 response=2296 chars
+2026-04-22 08:58:23,588 INFO gateway.platforms.base: [Telegram] Sending response (2264 chars) to 5637761676
+2026-04-22 08:58:23,969 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 134.0s: Flood control exceeded. Retry in 134 seconds

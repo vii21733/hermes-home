@@ -5250,3 +5250,5 @@
 2026-04-22 08:56:59,351 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 218.0s
 2026-04-22 08:57:00,247 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
 2026-04-22 08:57:00,996 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
+2026-04-22 08:58:18,685 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 139.0s: Flood control exceeded. Retry in 139 seconds
+2026-04-22 08:58:23,969 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 134.0s: Flood control exceeded. Retry in 134 seconds
