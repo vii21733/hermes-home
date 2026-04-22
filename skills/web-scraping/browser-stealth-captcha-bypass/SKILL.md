@@ -388,3 +388,52 @@ def solve_with_service(captcha_image_url):
 | Session persistence | N/A | N/A | **Needed** |
 
 **Conclusion:** Vision-based CAPTCHA solving (`browser_vision` + `browser_click`) is the most reliable method when bot detection is triggered. Residential proxies or session persistence are needed to avoid repeated challenges.
+
+## Cloudflare Managed Challenge (Turnstile) — NEW FINDINGS
+
+**April 2026 Live Test Results (Ollama signin.ollama.com):**
+
+### Detection Pattern:
+Cloudflare Managed Challenge uses iframe-isolated verification that **CANNOT be bypassed via browser_click or console execution** in automation environments without advanced stealth.
+
+**Key Indicators (detected via browser_console):**
+```javascript
+{ "token": "",
+  "forms": 0,
+  "inputs": 2,
+  "inputTypes": ["hidden:cf-turnstile-response", "hidden:cf_challenge_response"],
+  "url": "https://signin.ollama.com/sign-up",
+  "title": "Just a moment..."
+}
+```
+
+**Critical Finding:** Empty `cf-turnstile-response` and `cf_challenge_response` tokens indicate **server-side bot detection triggered**. The challenge never generates a valid token because Cloudflare detected automation signals from the browser environment.
+
+### Why Standard Methods Fail:
+
+1. **Iframe Isolation**: Checkbox rendered in isolated iframe, `browser_click` doesn't propagate to inner frame
+2. **Empty Token Fields**: Hidden inputs remain empty when automation detected (fingerprinting, navigator.webdriver, etc.)
+3. **Server-Side Validation**: Tokens must be generated server-side; client-side tricks insufficient
+4. **Environment Detection**: Current environment lacks:
+   - Residential proxies (BROWSERBASE_ADVANCED_STEALTH required)
+   - Real browser engine (Camofox/puppeteer-extra-stealth)
+   - Consistent session persistence
+
+### What DOESN'T Work:
+- ❌ Direct `browser_click` on iframe widget
+- ❌ JavaScript checkbox.click() via console
+- ❌ Simulating change events
+- ❌ Waiting for challenge (tokens stay empty)
+
+### Required for Success:
+- ✅ Residential/mobile proxies (rotating IPs)
+- ✅ Advanced stealth browsers (Camofox with stealth plugins)
+- ✅ Real browser engines with anti-fingerprinting
+- ✅ Session cookie persistence across requests
+
+### Recommendations:
+When encountering Cloudflare Managed Challenge on sensitive endpoints (auth, signup):
+1. **Skip entirely** — use alternative data sources
+2. **Use authenticated APIs** — avoid web scraping for login-required resources
+3. **Full stealth stack** — requires BROWSERBASE_ADVANCED_STEALTH or similar
+4. **Human-in-the-loop** — manual completion for one-off tasks
