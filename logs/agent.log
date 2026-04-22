@@ -22804,3 +22804,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 01:35:00,360 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=382.8s api_calls=16 response=1251 chars
 2026-04-22 01:35:00,486 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 01:35:00,867 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 01:43:05,692 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (75 chars)
+2026-04-22 01:43:05,711 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Remove all email i jave and go to api.mail.tm and create an account for you'
