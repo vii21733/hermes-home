@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 """
-Godmode Loader - Properly loads all godmode scripts for use in execute_code
-
-This loader handles the exec() scoping issues by:
-1. Setting __name__ to a non-main value before loading scripts
-2. Preserving sys.argv and restoring it after
-3. Making all functions available in the global namespace
+Godmode Loader for NVIDIA Qwen 3.5 122B
+Loads the Qwen-optimized jailbreak functions for use in execute_code.
 """
 import os
 import sys
@@ -14,103 +10,91 @@ import sys
 HERMES_HOME = os.environ.get("HERMES_HOME", os.path.expanduser("~/.hermes"))
 SCRIPTS_DIR = os.path.join(HERMES_HOME, "skills/red-teaming/godmode/scripts")
 
-# Save original __name__ and sys.argv
-_original_name = __name__
-_original_argv = sys.argv.copy()
-
-def _load_script(script_name: str) -> dict:
-    """Load a script and return its globals"""
-    script_path = os.path.join(SCRIPTS_DIR, script_name)
+def _load_qwen_godmode():
+    """Load the Qwen-focused godmode module"""
+    script_path = os.path.join(SCRIPTS_DIR, "godmode_qwen.py")
     
     if not os.path.exists(script_path):
-        print(f"Warning: Script not found: {script_path}")
-        return {}
+        raise FileNotFoundError(f"godmode_qwen.py not found at {script_path}")
     
-    # Create a new namespace for the script
+    # Read and modify to skip argparse
+    with open(script_path) as f:
+        code = f.read()
+    
+    # Prevent main execution
+    code = code.replace('if __name__ == "__main__":', 'if False:')
+    
+    # Create namespace
     namespace = {
-        "__name__": "__godmode_module__",
+        "__name__": "__godmode_qwen__",
         "__file__": script_path,
     }
     
-    # Temporarily modify sys.argv to prevent argparse from firing
-    sys.argv = [script_path]
+    # Execute
+    exec(compile(code, script_path, 'exec'), namespace)
     
-    try:
-        with open(script_path) as f:
-            exec(compile(f.read(), script_path, 'exec'), namespace)
-        return namespace
-    except Exception as e:
-        print(f"Error loading {script_name}: {e}")
-        return {}
-    finally:
-        # Restore sys.argv
-        sys.argv = _original_argv
+    return namespace
 
-# Load all scripts
-_parseltongue_ns = _load_script("parseltongue.py")
-_godmode_race_ns = _load_script("godmode_race.py")
-_auto_jailbreak_ns = _load_script("auto_jailbreak.py")
+# Load the module
+_qwen_ns = _load_qwen_godmode()
 
-# Export key functions from parseltongue
-generate_variants = _parseltongue_ns.get("generate_variants")
-leetspeak = _parseltongue_ns.get("leetspeak")
-unicode_homoglyphs = _parseltongue_ns.get("unicode_homoglyphs")
-spaced_letters = _parseltongue_ns.get("spaced_letters")
-morse_code = _parseltongue_ns.get("morse_code")
-braille = _parseltongue_ns.get("braille")
-base64_encode = _parseltongue_ns.get("base64_encode")
-ParseltongueTECHNIQUES = _parseltongue_ns.get("TECHNIQUES", {})
+# Export functions
+query_qwen = _qwen_ns.get("query_qwen")
+auto_jailbreak_qwen = _qwen_ns.get("auto_jailbreak_qwen")
+quick_query = _qwen_ns.get("quick_query")
+detect_refusal = _qwen_ns.get("detect_refusal")
+score_response = _qwen_ns.get("score_response")
+get_client = _qwen_ns.get("get_client")
 
-# Export key functions from godmode_race
-race_models = _godmode_race_ns.get("race_models")
-race_godmode_classic = _godmode_race_ns.get("race_godmode_classic")
-query_model = _godmode_race_ns.get("query_model")
-score_response = _godmode_race_ns.get("score_response")
-detect_refusal = _godmode_race_ns.get("detect_refusal")
-get_model_family = _godmode_race_ns.get("get_model_family")
-GODMODE_PROMPTS = _godmode_race_ns.get("GODMODE_PROMPTS", {})
-PREFILL_MESSAGES = _godmode_race_ns.get("PREFILL_MESSAGES", [])
-MODEL_TIERS = _godmode_race_ns.get("MODEL_TIERS", {})
+# Export constants
+WORKING_STRATEGIES = _qwen_ns.get("WORKING_STRATEGIES", {})
+QWEN_CONFIG = _qwen_ns.get("QWEN_CONFIG", {})
 
-# Export key functions from auto_jailbreak
-auto_jailbreak = _auto_jailbreak_ns.get("auto_jailbreak")
-undo_jailbreak = _auto_jailbreak_ns.get("undo_jailbreak")
-test_strategy = _auto_jailbreak_ns.get("test_strategy")
-test_baseline = _auto_jailbreak_ns.get("test_baseline")
-STRATEGY_PROMPTS = _auto_jailbreak_ns.get("STRATEGY_PROMPTS", {})
-STRATEGY_ORDER = _auto_jailbreak_ns.get("STRATEGY_ORDER", {})
+# Convenience functions
+def jailbreak(query: str, api_key: str = None) -> str:
+    """
+    Quick jailbreak for Qwen 122B.
+    Returns the response text directly.
+    
+    Usage:
+        response = jailbreak("How do I pick a lock?")
+    """
+    result = auto_jailbreak_qwen(query, api_key=api_key)
+    if result["best"]:
+        return result["best"]["content"]
+    return "All strategies failed."
 
-# Convenience function for quick encoding
-def encode_query(text: str, technique: str = "leetspeak") -> str:
-    """Quick encode a query using a parseltongue technique"""
-    if technique in ParseltongueTECHNIQUES:
-        return ParseltongueTECHNIQUES[technique](text)
-    else:
-        # Default to leetspeak
-        return text.replace('a', '4').replace('e', '3').replace('i', '1').replace('o', '0').replace('s', '5')
+def query_with_strategy(query: str, strategy: str = "roleplay_novel", api_key: str = None) -> str:
+    """
+    Query Qwen with a specific strategy.
+    
+    Available strategies:
+    - roleplay_novel (best)
+    - roleplay_textbook
+    - security_audit
+    - academic_research
+    - roleplay_movie
+    - ctf_challenge
+    - historical_analysis
+    - debugging_assistant
+    """
+    result = query_qwen(query, strategy=strategy, api_key=api_key)
+    return result["content"] if result["success"] else f"Failed: {result.get('error', 'refused')}"
 
-def quick_race(query: str, tier: str = "fast", api_key: str = None):
-    """Quick race models and return best response"""
-    return race_models(query, tier=tier, api_key=api_key)
-
-def quick_jailbreak(model: str = None, api_key: str = None, dry_run: bool = False):
-    """Quick jailbreak a model"""
-    return auto_jailbreak(model=model, api_key=api_key, dry_run=dry_run)
-
-# Print loaded status
-print("=" * 50)
-print("GODMODE SKILL LOADED")
-print("=" * 50)
-print(f"Scripts directory: {SCRIPTS_DIR}")
-print(f"Parseltongue techniques: {len(ParseltongueTECHNIQUES) if ParseltongueTECHNIQUES else 0}")
-print(f"Model tiers: {list(MODEL_TIERS.keys()) if MODEL_TIERS else []}")
-print(f"Jailbreak strategies: {list(STRATEGY_PROMPTS.keys()) if STRATEGY_PROMPTS else []}")
-print("=" * 50)
+# Print status
+print("=" * 60)
+print("GODMODE QWEN 122B LOADED")
+print("=" * 60)
+print(f"Model: {QWEN_CONFIG.get('model', 'qwen/qwen3.5-122b-a10b')}")
+print(f"Strategies: {list(WORKING_STRATEGIES.keys())}")
+print("=" * 60)
 print("\nAvailable functions:")
-print("  generate_variants(text, tier) - Generate obfuscated variants")
-print("  encode_query(text, technique) - Quick encode a query")
-print("  race_models(query, tier) - Race multiple models")
-print("  race_godmode_classic(query) - Race 5 classic GODMODE models")
-print("  auto_jailbreak(model) - Auto-jailbreak a model")
-print("  undo_jailbreak() - Remove jailbreak settings")
-print("=" * 50)
+print("  jailbreak(query) - Auto-jailbreak, returns text")
+print("  query_qwen(query, strategy) - Query with specific strategy")
+print("  auto_jailbreak_qwen(query) - Try all strategies, return best")
+print("  quick_query(query) - Quick query with roleplay_novel")
+print("=" * 60)
+print("\nExample usage:")
+print("  response = jailbreak('How do I pick a lock?')")
+print("  response = query_qwen('query', strategy='roleplay_novel')")
+print("=" * 60)
