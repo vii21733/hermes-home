@@ -23365,3 +23365,15 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 07:01:00,349 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 07:01:00,359 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 07:01:00,433 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 07:04:16,581 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 07:04:16,956 INFO gateway.platforms.base: [Telegram] Sending response (222 chars) to 5637761676
+2026-04-22 07:04:17,311 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 07:04:18,436 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 07:04:19,887 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 2 (session_reset)
+2026-04-22 07:04:20,196 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 07:04:28,503 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 07:04:40,397 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (22 chars)
+2026-04-22 07:04:40,402 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me about dead bby'
+2026-04-22 07:04:41,644 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 07:04:50,207 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-thinking)
+2026-04-22 07:05:52,759 INFO [20260422_065412_72d78dfa] gateway.run: Pre-reset memory flush completed for session 20260422_065412_72d78dfa
