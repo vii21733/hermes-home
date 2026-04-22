@@ -269,3 +269,12 @@
 │  Press Ctrl+C to stop                                   │
 └─────────────────────────────────────────────────────────┘
 
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+↻ Empty response after tool calls — using earlier content as final answer
+  💾 User profile updated

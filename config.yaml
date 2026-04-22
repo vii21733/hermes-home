@@ -1,9 +1,9 @@
 model:
-  default: moonshotai/kimi-k2-thinking
+  default: qwen/qwen3.5-397b-a17b
   provider: nvidia
   base_url: https://integrate.api.nvidia.com/v1
   max_tokens: 32768
-  context_length: 262144
+  context_length: 131072
 providers: {}
 fallback_providers: []
 credential_pool_strategies: {}

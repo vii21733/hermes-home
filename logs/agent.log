@@ -23270,3 +23270,32 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 06:40:27,382 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Does it work on new session'
 2026-04-22 06:42:30,074 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 06:42:30,075 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=122.7s api_calls=1 response=255 chars
+2026-04-22 06:50:04,226 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 06:50:04,260 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36588 12816 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+  z         3334  0.0  0.0   4444  3264 ?        S    06:49   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
+2026-04-22 06:50:04,261 INFO gateway.run: Stopping gateway...
+2026-04-22 06:50:04,871 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 06:50:04,872 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 06:50:04,882 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 06:50:04,957 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 06:50:04,957 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 06:50:05,464 INFO gateway.run: Gateway stopped
+2026-04-22 06:50:05,465 INFO gateway.run: Cron ticker stopped
+2026-04-22 06:50:05,465 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-22 06:50:23,103 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 06:50:23,104 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 06:50:23,361 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-22 06:50:23,549 INFO gateway.run: Connecting to telegram...
+2026-04-22 06:50:23,731 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 06:50:23,732 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 06:50:23,732 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 06:50:24,340 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 06:50:24,340 INFO telegram.ext.Application: Application started
+2026-04-22 06:50:36,877 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 06:50:36,939 INFO gateway.run: ✓ telegram connected
+2026-04-22 06:50:36,980 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 06:50:36,988 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 06:50:37,202 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 06:50:37,211 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 06:50:37,290 INFO gateway.run: Cron ticker started (interval=60s)
