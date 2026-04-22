@@ -22994,3 +22994,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 04:04:33,649 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 04:05:45,323 INFO [20260422_023913_e36b603d] gateway.run: Pre-reset memory flush completed for session 20260422_023913_e36b603d
 2026-04-22 04:05:45,407 INFO gateway.run: Session expiry done: 1 flushed
+2026-04-22 04:11:37,842 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 04:11:37,843 INFO [20260422_023913_e36b603d] agent.auxiliary_client: Auxiliary vision: using nvidia (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
