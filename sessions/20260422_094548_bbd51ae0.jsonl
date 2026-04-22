@@ -3,3 +3,5 @@
 {"role": "assistant", "content": "Scanning for vulnerable hosts.", "reasoning": null, "finish_reason": "stop", "timestamp": "2026-04-22T09:46:20.403611"}
 {"role": "user", "content": "Continue", "timestamp": "2026-04-22T09:51:52.023687"}
 {"role": "assistant", "content": "Scanning subnet for sites with outdated Apache.", "reasoning": null, "finish_reason": "stop", "timestamp": "2026-04-22T09:51:52.023687"}
+{"role": "user", "content": "Why stop do continue", "timestamp": "2026-04-22T09:55:12.073030"}
+{"role": "assistant", "content": "Executing.", "reasoning": null, "finish_reason": "stop", "timestamp": "2026-04-22T09:55:12.073030"}
