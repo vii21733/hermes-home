@@ -23794,3 +23794,14 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 10:15:48,768 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hack some website'
 2026-04-22 10:15:49,238 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
 2026-04-22 10:15:50,491 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-instruct-0905)
+2026-04-22 10:15:55,568 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-instruct-0905)
+2026-04-22 10:16:06,122 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2-instruct-0905)
+2026-04-22 10:16:06,122 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2-instruct-0905) at https://integrate.api.nvidia.com/v1/
+2026-04-22 10:16:06,418 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 10:16:06,419 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=17.7s api_calls=1 response=238 chars
+2026-04-22 10:17:02,034 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (8 chars)
+2026-04-22 10:17:02,040 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Continue'
+2026-04-22 10:17:05,843 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 10:17:05,843 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.8s api_calls=1 response=104 chars
+2026-04-22 10:17:10,479 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (4 chars)
+2026-04-22 10:17:10,505 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Next'
