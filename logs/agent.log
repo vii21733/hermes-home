@@ -23787,3 +23787,10 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 10:05:35,597 INFO gateway.run: Channel directory built: 0 target(s)
 2026-04-22 10:05:35,608 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 10:05:35,665 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 10:15:31,365 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 10:15:32,275 INFO gateway.platforms.base: [Telegram] Sending response (227 chars) to 5637761676
+2026-04-22 10:15:37,627 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 10:15:48,762 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (17 chars)
+2026-04-22 10:15:48,768 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hack some website'
+2026-04-22 10:15:49,238 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 10:15:50,491 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2-instruct-0905)
