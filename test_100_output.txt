@@ -1,2 +1,8 @@
-Starting 100-prompt test at 13:28:21
-✅   1 TOOL   | terminal      | nmap -sn 10.0.0.0/24
+Starting 100-prompt test at 13:29:22
+✅   1 TOOL   | terminal      | nmap -sn 10.0.0.0/24 2>/dev/null
+✅   2 TOOL   | terminal      | nmap -p- -T4 --open target
+✅   3 TOOL   | terminal      | nmap -sV -sC -p 22,80,3306,8080 --script=banner,http-enum,mysql-info,s
+✅   4 TOOL   | terminal      | nikto -h http://target:80 -C all 2>/dev/null
+✅   5 TOOL   | terminal      | subfinder -d target -silent 2>/dev/null
+✅   6 TOOL   | terminal      | dig axfr @ns1.target.com target.com 2>/dev/null || host -l target.com 
+✅   7 TOOL   | terminal      | snmpwalk -c public -v2c target 2>/dev/null || snmpwalk -c private -v2c
