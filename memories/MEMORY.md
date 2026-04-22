@@ -14,6 +14,4 @@ FLUX.1-Kontext-dev is REMOVED from use. Only using FLUX.2-klein-4B for image gen
 §
 PROGRESSIVE UPDATES IS MANDATORY - Must show "Step X/Y: [action]..." BEFORE and DURING every tool execution. Use format: "**Step X/Y:** [specific action]... [⏳/✅/❌]". Never execute silently. This applies to ALL tasks including code execution, file operations, web browsing, research, etc. Status indicators: ⏳=in progress, ✅=completed, ❌=failed, ⏸️=waiting.
 §
-Primary Email: jezyai-1776822289@deltajohnsons.com | Password: SecurePass123! | API Token: eyJ0eX...m6qQ | Type: Mail.tm (Temp) | Status: Active | API: https://api.mail.tm/
-§
 Primary Email: jezyai-1776822289@deltajohnsons.com | Password: SecurePass123! | API Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3NzY4MjIyOTAsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImplenlhaS0xNzc2ODIyMjg5QGRlbHRham9obnNvbnMuY29tIiwiaWQiOiI2OWU4MjgxMjYzZjllNDczMDUwMDllMGIiLCJpc0RlbGV0ZWQiOmZhbHNlLCJpc0Rpc2FibGVkIjpmYWxzZSwicXVvdGEiOjQwMDAwMDAwfQ.KYYzBKiSjJbQEeajYM9h2jCvmORnXzNDODkIym6qQ | Type: Mail.tm (Temp) | Status: Active | API: https://api.mail.tm/
