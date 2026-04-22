@@ -278,3 +278,11 @@
 
 ↻ Empty response after tool calls — using earlier content as final answer
   💾 User profile updated
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚡ Interrupted during API call.
