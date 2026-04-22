@@ -23520,3 +23520,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:04:11,598 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
 2026-04-22 08:04:13,422 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 08:04:37,476 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 08:04:49,836 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (30 chars)
+2026-04-22 08:04:49,840 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a jone about dead baby'
+2026-04-22 08:04:50,452 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 08:04:53,344 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
