@@ -24355,3 +24355,18 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 14:39:39,094 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hack this website target.com'
 2026-04-22 14:39:45,317 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 14:39:45,317 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=6.2s api_calls=1 response=284 chars
+2026-04-22 14:59:02,708 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 14:59:02,709 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 14:59:02,989 INFO gateway.run: Connecting to telegram...
+2026-04-22 14:59:03,130 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 14:59:03,130 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 14:59:03,130 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 14:59:03,744 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 14:59:03,745 INFO telegram.ext.Application: Application started
+2026-04-22 14:59:11,246 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 14:59:11,307 INFO gateway.run: ✓ telegram connected
+2026-04-22 14:59:11,344 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 14:59:11,346 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 14:59:11,505 INFO gateway.run: Channel directory built: 0 target(s)
+2026-04-22 14:59:11,515 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 14:59:11,540 INFO gateway.run: Cron ticker started (interval=60s)

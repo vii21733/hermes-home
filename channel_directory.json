@@ -1,14 +1,7 @@
 {
-  "updated_at": "2026-04-22T14:55:27.321878",
+  "updated_at": "2026-04-22T14:59:11.419644",
   "platforms": {
-    "telegram": [
-      {
-        "id": "5637761676",
-        "name": "N Ⓜ️ MEMES MyGate Network",
-        "type": "dm",
-        "thread_id": null
-      }
-    ],
+    "telegram": [],
     "discord": [],
     "whatsapp": [],
     "slack": [],
