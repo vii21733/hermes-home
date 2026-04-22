@@ -22972,3 +22972,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 03:30:53,946 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=309.5s api_calls=8 response=3132 chars
 2026-04-22 03:34:58,850 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (27 chars)
 2026-04-22 03:34:58,867 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Okay make a solution for it'
+2026-04-22 03:46:35,817 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 03:46:35,817 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=697.0s api_calls=9 response=1292 chars
+2026-04-22 03:46:37,699 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 03:46:38,065 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
