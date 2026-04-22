@@ -22796,3 +22796,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-21 20:31:16,318 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-21 21:33:35,919 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:5637761676 (idle=3744s)
 2026-04-21 21:33:35,920 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-04-22 01:28:37,553 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (42 chars)
+2026-04-22 01:28:37,563 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Find a skill on clawhub that is agent mail'
+2026-04-22 01:28:38,952 INFO [20260421_194444_e8e778be] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 01:28:39,375 INFO [20260421_194444_e8e778be] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
