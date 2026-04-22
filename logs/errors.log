@@ -5259,3 +5259,5 @@
 2026-04-22 09:15:14,447 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 253.0s
 2026-04-22 09:15:21,221 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 246.0s: Flood control exceeded. Retry in 246 seconds
 2026-04-22 09:15:26,090 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 242.0s: Flood control exceeded. Retry in 242 seconds
+2026-04-22 09:19:28,493 WARNING gateway.platforms.base: [Telegram] Failed to send media (.wav): Audio file not found: /opt/audio/deepfake_potus.wav
+2026-04-22 09:19:28,494 WARNING gateway.platforms.base: [Telegram] Failed to send media (.png): Image file not found: /opt/maps/extraction_route.png

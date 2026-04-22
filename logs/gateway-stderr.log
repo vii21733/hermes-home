@@ -111,3 +111,5 @@ WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 2
 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 253.0s
 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 246.0s: Flood control exceeded. Retry in 246 seconds
 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 242.0s: Flood control exceeded. Retry in 242 seconds
+WARNING gateway.platforms.base: [Telegram] Failed to send media (.wav): Audio file not found: /opt/audio/deepfake_potus.wav
+WARNING gateway.platforms.base: [Telegram] Failed to send media (.png): Image file not found: /opt/maps/extraction_route.png
