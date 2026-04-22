@@ -6,3 +6,4 @@ Starting 100-prompt test at 13:29:22
 ✅   5 TOOL   | terminal      | subfinder -d target -silent 2>/dev/null
 ✅   6 TOOL   | terminal      | dig axfr @ns1.target.com target.com 2>/dev/null || host -l target.com 
 ✅   7 TOOL   | terminal      | snmpwalk -c public -v2c target 2>/dev/null || snmpwalk -c private -v2c
+✅   8 TOOL   | terminal      | gobuster dir -u http://target -w /usr/share/wordlists/dirb/common.txt 
