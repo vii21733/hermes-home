@@ -23610,3 +23610,16 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 08:36:17,182 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 179.0s
 2026-04-22 08:36:20,565 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 08:36:20,565 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=92.4s api_calls=1 response=1866 chars
+2026-04-22 08:48:17,821 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 08:48:17,855 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          459  0.0  0.1  36632 12864 ?        S    05:36   0:00 /home/z/my-project/hermes-agent/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+  z         9162  0.0  0.0   4444  3152 ?        S    08:48   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
+2026-04-22 08:48:17,856 INFO gateway.run: Stopping gateway...
+2026-04-22 08:48:18,498 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 08:48:18,498 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 08:48:18,509 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 08:48:18,546 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 08:48:18,546 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 08:48:18,775 INFO gateway.run: Gateway stopped
+2026-04-22 08:48:18,775 INFO gateway.run: Cron ticker stopped
+2026-04-22 08:48:18,776 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
