@@ -5277,3 +5277,6 @@
   z        16249  0.0  0.0   7888  1388 ?        S    11:21   0:00 /usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/vii21733/hermes-home.git/ --stdin
 2026-04-22 11:23:11,110 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
   z        16325  0.0  0.0   2972  1084 ?        S    11:22   0:00 timeout 30 ./venv/bin/hermes gateway run
+2026-04-22 13:51:12,321 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z        22752  0.0  0.0   4444  3076 ?        S    13:50   0:00 bash /home/z/my-project/hermes-home/auto-sync.sh
+  z        22772  0.0  0.0   2972  1096 ?        S    13:50   0:00 timeout 20 env HERMES_HOME=/home/z/my-project/hermes-home /home/z/my-project/hermes-agent/venv/bin/hermes gateway run
