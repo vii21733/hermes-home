@@ -23454,3 +23454,20 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 07:40:18,861 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 07:40:18,870 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 07:40:18,939 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 07:44:26,328 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 07:44:26,837 INFO gateway.platforms.base: [Telegram] Sending response (231 chars) to 5637761676
+2026-04-22 07:44:27,158 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 07:44:28,368 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (minimaxai/minimax-m2.7)
+2026-04-22 07:44:33,742 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 2 (session_reset)
+2026-04-22 07:44:34,040 INFO gateway.platforms.base: [Telegram] Sending response (222 chars) to 5637761676
+2026-04-22 07:44:39,678 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 07:44:42,859 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (2 chars)
+2026-04-22 07:44:42,865 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hi'
+2026-04-22 07:44:43,424 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (minimaxai/minimax-m2.7)
+2026-04-22 07:44:46,574 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (minimaxai/minimax-m2.7)
+2026-04-22 07:45:12,336 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (minimaxai/minimax-m2.7)
+2026-04-22 07:45:12,337 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (minimaxai/minimax-m2.7) at https://integrate.api.nvidia.com/v1/
+2026-04-22 07:45:12,570 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 07:45:12,570 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=29.7s api_calls=1 response=22 chars
+2026-04-22 07:45:25,980 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (29 chars)
+2026-04-22 07:45:25,986 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a joke about dead gay'
