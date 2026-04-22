@@ -24274,3 +24274,30 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 14:07:55,816 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-22 14:07:55,827 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 14:07:55,878 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 14:10:53,802 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 14:10:53,860 INFO gateway.run: Shutdown diagnostic — no other hermes processes found
+2026-04-22 14:10:53,861 INFO gateway.run: Stopping gateway...
+2026-04-22 14:10:54,504 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 14:10:54,504 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 14:10:54,514 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 14:10:54,551 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 14:10:54,551 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 14:10:55,423 INFO gateway.run: Gateway stopped
+2026-04-22 14:10:55,423 INFO gateway.run: Cron ticker stopped
+2026-04-22 14:10:55,426 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-22 14:11:17,728 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 14:11:17,728 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 14:11:17,827 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-22 14:11:17,987 INFO gateway.run: Connecting to telegram...
+2026-04-22 14:11:18,137 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 14:11:18,137 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 14:11:18,137 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 14:11:18,746 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 14:11:18,746 INFO telegram.ext.Application: Application started
+2026-04-22 14:11:22,932 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 14:11:22,963 INFO gateway.run: ✓ telegram connected
+2026-04-22 14:11:22,988 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 14:11:22,990 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 14:11:23,054 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 14:11:23,064 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 14:11:23,131 INFO gateway.run: Cron ticker started (interval=60s)
