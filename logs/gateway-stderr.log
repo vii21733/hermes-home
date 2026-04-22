@@ -104,3 +104,4 @@ WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 2
 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control, waiting 217.0s
 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 139.0s: Flood control exceeded. Retry in 139 seconds
 WARNING gateway.platforms.telegram: [Telegram] Telegram flood control on send (attempt 1/3), retrying in 134.0s: Flood control exceeded. Retry in 134 seconds
+WARNING gateway.platforms.base: [Telegram] Failed to send media (.stl): File file not found: /opt/weapons/glock.stl
