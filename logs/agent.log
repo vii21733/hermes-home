@@ -24097,3 +24097,11 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 13:51:41,025 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
 2026-04-22 13:51:41,025 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
 2026-04-22 13:51:41,026 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 13:53:08,091 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 13:53:08,091 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 13:53:08,582 INFO gateway.run: Connecting to telegram...
+2026-04-22 13:53:08,725 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 13:53:08,726 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 13:53:08,726 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 13:53:09,360 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 13:53:09,360 INFO telegram.ext.Application: Application started
