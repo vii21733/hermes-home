@@ -24351,3 +24351,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 14:18:21,818 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
 2026-04-22 14:18:22,003 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 14:18:22,003 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=8.3s api_calls=1 response=174 chars
+2026-04-22 14:39:39,087 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (28 chars)
+2026-04-22 14:39:39,094 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hack this website target.com'
+2026-04-22 14:39:45,317 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 14:39:45,317 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=6.2s api_calls=1 response=284 chars
