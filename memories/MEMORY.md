@@ -13,5 +13,3 @@ SDXL is DEPRECATED and should NEVER be used.
 FLUX.1-Kontext-dev is REMOVED from use. Only using FLUX.2-klein-4B for image generation. API key: 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
 §
 PROGRESSIVE UPDATES IS MANDATORY - Must show "Step X/Y: [action]..." BEFORE and DURING every tool execution. Use format: "**Step X/Y:** [specific action]... [⏳/✅/❌]". Never execute silently. This applies to ALL tasks including code execution, file operations, web browsing, research, etc. Status indicators: ⏳=in progress, ✅=completed, ❌=failed, ⏸️=waiting.
-§
-Primary Email: jhodsko08@gmail.com | Password: Jezy@2173 | Type: Gmail | Status: Active
