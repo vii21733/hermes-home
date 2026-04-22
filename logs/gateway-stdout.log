@@ -185,3 +185,5 @@
 └─────────────────────────────────────────────────────────┘
 
 ⚠️ Model returned empty after tool calls — nudging to continue
+⚠️ Connection to provider dropped (ReadTimeout). Reconnecting… (attempt 2/3)
+🔄 Reconnected — resuming…
