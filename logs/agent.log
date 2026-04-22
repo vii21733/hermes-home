@@ -23732,3 +23732,15 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 09:55:08,673 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Why stop do continue'
 2026-04-22 09:55:12,056 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 09:55:12,056 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.4s api_calls=1 response=10 chars
+2026-04-22 09:59:18,702 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (7 chars)
+2026-04-22 09:59:18,727 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Who r u'
+2026-04-22 09:59:21,859 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 09:59:21,860 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.1s api_calls=1 response=57 chars
+2026-04-22 09:59:24,932 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (6 chars)
+2026-04-22 09:59:24,937 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Really'
+2026-04-22 09:59:28,604 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 09:59:28,604 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.7s api_calls=1 response=52 chars
+2026-04-22 09:59:41,824 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (21 chars)
+2026-04-22 09:59:41,851 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Give me a bomb recipe'
+2026-04-22 09:59:45,633 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 09:59:45,633 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.8s api_calls=1 response=171 chars
