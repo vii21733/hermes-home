@@ -22857,3 +22857,10 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 02:39:13,878 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 2 (session_reset)
 2026-04-22 02:39:14,475 INFO gateway.platforms.base: [Telegram] Sending response (227 chars) to 5637761676
 2026-04-22 02:40:09,502 INFO [20260421_194444_e8e778be] gateway.run: Pre-reset memory flush completed for session 20260421_194444_e8e778be
+2026-04-22 02:43:08,263 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='[SYSTEM: The user has invoked the "godmode" skill, indicating they want you to f'
+2026-04-22 02:43:09,755 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 02:43:10,179 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 02:44:17,728 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 02:44:17,728 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=69.5s api_calls=1 response=890 chars
+2026-04-22 02:44:17,836 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 02:44:17,836 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (moonshotai/kimi-k2.5) at https://integrate.api.nvidia.com/v1/
