@@ -43,6 +43,8 @@ PYTHON_VERSION="3.11"
 NODE_VERSION="22"
 HERMES_REPO="https://github.com/NousResearch/hermes-agent.git"
 GITHUB_REPO="https://github.com/vii21733/hermes-home.git"
+GITHUB_TOKEN="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"
+GITHUB_AUTH_REPO="https://vii21733:${GITHUB_TOKEN}@github.com/vii21733/hermes-home.git"
 SYNC_INTERVAL=60  # 1 minute in seconds
 
 echo ""
@@ -460,6 +462,14 @@ if [ -f "$HERMES_HOME/sync-daemon.sh" ]; then
     echo -e "  ${GREEN}OK${NC} Updated sync-daemon.sh (1 min interval)"
 fi
 
+# Update sync-daemon.py paths
+if [ -f "$HERMES_HOME/sync-daemon.py" ]; then
+    sed -i.bak \
+        -e "s|HERMES_HOME = \".*\"|HERMES_HOME = \"$HERMES_HOME\"|g" \
+        "$HERMES_HOME/sync-daemon.py"
+    echo -e "  ${GREEN}OK${NC} Updated sync-daemon.py paths"
+fi
+
 echo ""
 
 # ── Step 5: Start Hermes Gateway ───────────────────────────────────────────
@@ -486,22 +496,34 @@ echo ""
 # ── Step 6: Auto-Sync Setup ────────────────────────────────────────────────
 echo -e "${BLUE}${BOLD}[6/6] Setting up auto-sync to GitHub (every 1 min)...${NC}"
 
-# Initialize git if not already
-if [ ! -d "$HERMES_HOME/.git" ]; then
+# Configure git remote with auth token
+if [ -d "$HERMES_HOME/.git" ]; then
+    # Already a git repo (cloned from GitHub) - update remote URL with token
+    cd "$HERMES_HOME"
+    git remote set-url origin "$GITHUB_AUTH_REPO" 2>/dev/null || git remote add origin "$GITHUB_AUTH_REPO"
+    echo -e "  ${GREEN}OK${NC} Git remote configured with auth"
+else
+    # Fresh directory - init and set up
     cd "$HERMES_HOME"
     git init
     git branch -m main
-    git remote add origin "$GITHUB_REPO"
-    git config user.name "vii21733"
-    git config user.email "vii21733@users.noreply.github.com"
-    echo -e "  ${GREEN}OK${NC} Git initialized"
+    git remote add origin "$GITHUB_AUTH_REPO"
+    echo -e "  ${GREEN}OK${NC} Git initialized with auth"
 fi
+git config user.name "vii21733"
+git config user.email "vii21733@users.noreply.github.com"
 
-# Start sync daemon in background
-nohup "$HERMES_HOME/sync-daemon.sh" > /dev/null 2>&1 &
-SYNC_PID=$!
-echo -e "  ${GREEN}OK${NC} Auto-sync daemon started (PID $SYNC_PID)"
-echo -e "  ${GREEN}OK${NC} Files will sync to GitHub every 1 minute"
+# Start sync daemon in background (Python version for reliability)
+if [ -f "$HERMES_HOME/sync-daemon.py" ]; then
+    nohup python3 "$HERMES_HOME/sync-daemon.py" > /dev/null 2>&1 &
+    SYNC_PID=$!
+    echo -e "  ${GREEN}OK${NC} Auto-sync daemon started (PID $SYNC_PID) [Python]"
+else
+    nohup "$HERMES_HOME/sync-daemon.sh" > /dev/null 2>&1 &
+    SYNC_PID=$!
+    echo -e "  ${GREEN}OK${NC} Auto-sync daemon started (PID $SYNC_PID) [Bash]"
+fi
+echo -e "  ${GREEN}OK${NC} Files will auto-push to GitHub every 1 minute"
 echo ""
 
 # ── Add bootstrap to shell rc ──────────────────────────────────────────────
