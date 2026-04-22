@@ -22800,3 +22800,7 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 01:28:37,563 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Find a skill on clawhub that is agent mail'
 2026-04-22 01:28:38,952 INFO [20260421_194444_e8e778be] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
 2026-04-22 01:28:39,375 INFO [20260421_194444_e8e778be] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 01:35:00,358 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 01:35:00,360 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=382.8s api_calls=16 response=1251 chars
+2026-04-22 01:35:00,486 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
+2026-04-22 01:35:00,867 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (moonshotai/kimi-k2.5)
