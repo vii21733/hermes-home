@@ -24029,3 +24029,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 12:08:41,509 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Generate me an img of a turtle eating carrots'
 2026-04-22 12:10:22,985 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 12:10:22,987 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=101.5s api_calls=4 response=70 chars
+2026-04-22 12:12:08,967 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (49 chars)
+2026-04-22 12:12:08,991 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='You use the flux 2 and generate img and send here'
