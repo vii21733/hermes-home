@@ -22808,3 +22808,9 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 01:43:05,711 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Remove all email i jave and go to api.mail.tm and create an account for you'
 2026-04-22 01:49:16,946 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 01:49:16,948 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=371.2s api_calls=8 response=650 chars
+2026-04-22 01:53:55,703 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (38 chars)
+2026-04-22 01:53:55,713 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Save it and remember i have this email'
+2026-04-22 01:54:52,161 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 01:54:52,162 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=56.4s api_calls=2 response=157 chars
+2026-04-22 01:55:07,378 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (7 chars)
+2026-04-22 01:55:07,391 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Test it'
