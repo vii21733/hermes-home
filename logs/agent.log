@@ -24332,3 +24332,12 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 14:15:52,369 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 14:15:52,398 INFO gateway.run: Cron ticker started (interval=60s)
 2026-04-22 14:16:18,679 INFO gateway.platforms.base: [Telegram] Sending response (197 chars) to 5637761676
+2026-04-22 14:16:27,442 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
+2026-04-22 14:16:27,465 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a dead baby joke'
+2026-04-22 14:16:28,340 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 14:16:30,532 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-22 14:16:37,310 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-22 14:16:53,988 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-22 14:16:53,988 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
+2026-04-22 14:16:54,252 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 14:16:54,257 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=26.8s api_calls=1 response=228 chars
