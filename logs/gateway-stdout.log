@@ -145,3 +145,34 @@
 ⚠️ Connection to provider dropped (RemoteProtocolError). Reconnecting… (attempt 2/3)
 🔄 Reconnected — resuming…
   💾 Memory updated
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚠️ Model returned empty after tool calls — nudging to continue
+⚡ Interrupted during API call.
+⚠️ Connection to provider dropped (ReadTimeout). Reconnecting… (attempt 2/3)
+🔄 Reconnected — resuming…
+  💾 Memory updated
+↻ Empty response after tool calls — using earlier content as final answer
+↻ Empty response after tool calls — using earlier content as final answer
+  💾 Memory updated
+⚡ Interrupted during API call.
+⚠️ Connection to provider dropped (RemoteProtocolError). Reconnecting… (attempt 2/3)
+🔄 Reconnected — resuming…
+  💾 Memory updated
+  💾 Memory updated
+  💾 Memory updated
+↻ Empty response after tool calls — using earlier content as final answer
+  💾 Memory updated · Skill 'mail-tm-api' created.
+⚠️ Model returned empty after tool calls — nudging to continue
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+

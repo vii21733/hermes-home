@@ -1,7 +1,7 @@
 {
   "status": "running",
-  "keeper_pid": 459,
-  "gateway_pid": 473,
+  "keeper_pid": 11938,
+  "gateway_pid": 11946,
   "restarts": 0,
-  "timestamp": "2026-04-21T19:06:55"
+  "timestamp": "2026-04-22T02:31:05"
 }

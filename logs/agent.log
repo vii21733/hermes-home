@@ -22822,3 +22822,31 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 02:09:41,007 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Check my hermes version and see if it has a new version'
 2026-04-22 02:14:39,101 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 02:14:39,103 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=298.1s api_calls=9 response=813 chars
+2026-04-22 02:30:50,098 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 02:30:50,141 INFO gateway.run: Shutdown diagnostic — no other hermes processes found
+2026-04-22 02:30:50,141 INFO gateway.run: Stopping gateway...
+2026-04-22 02:30:50,755 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 02:30:50,755 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 02:30:50,765 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 02:30:50,817 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 02:30:50,817 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 02:30:51,348 INFO gateway.run: Gateway stopped
+2026-04-22 02:30:51,348 INFO gateway.run: Cron ticker stopped
+2026-04-22 02:30:51,349 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-22 02:31:05,721 INFO hermes_cli.plugins: Plugin discovery complete: 1 found, 0 enabled
+2026-04-22 02:31:18,914 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 02:31:18,915 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 02:31:19,202 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-22 02:31:19,409 INFO gateway.run: Connecting to telegram...
+2026-04-22 02:31:19,529 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 02:31:19,529 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 02:31:19,529 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 02:31:20,132 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 02:31:20,133 INFO telegram.ext.Application: Application started
+2026-04-22 02:31:28,069 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 02:31:28,131 INFO gateway.run: ✓ telegram connected
+2026-04-22 02:31:28,177 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 02:31:28,182 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 02:31:28,311 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-22 02:31:28,333 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 02:31:28,444 INFO gateway.run: Cron ticker started (interval=60s)
