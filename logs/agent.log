@@ -24370,3 +24370,64 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 14:59:11,505 INFO gateway.run: Channel directory built: 0 target(s)
 2026-04-22 14:59:11,515 INFO gateway.run: Press Ctrl+C to stop
 2026-04-22 14:59:11,540 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 22:59:27,888 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-04-22 22:59:27,888 INFO hermes_cli.plugins: Plugin discovery complete: 2 found, 1 enabled
+2026-04-22 22:59:28,936 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 22:59:28,936 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 22:59:29,158 INFO gateway.run: Connecting to telegram...
+2026-04-22 22:59:29,224 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 22:59:29,224 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 22:59:29,224 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 22:59:29,818 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 22:59:29,819 INFO telegram.ext.Application: Application started
+2026-04-22 22:59:30,873 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 18 hidden (over 100 limit). Use /commands for full list.
+2026-04-22 22:59:30,874 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 22:59:30,874 INFO gateway.run: ✓ telegram connected
+2026-04-22 22:59:30,874 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 22:59:30,875 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 22:59:30,877 INFO gateway.run: Channel directory built: 0 target(s)
+2026-04-22 22:59:30,878 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 22:59:30,928 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 22:59:55,931 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-22 22:59:55,940 INFO gateway.run: Shutdown diagnostic — no other hermes processes found
+2026-04-22 22:59:55,940 INFO gateway.run: Stopping gateway...
+2026-04-22 22:59:56,508 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-22 22:59:56,508 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-22 22:59:56,518 INFO telegram.ext.Application: Application.stop() complete
+2026-04-22 22:59:56,519 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-22 22:59:56,520 INFO gateway.run: ✓ telegram disconnected
+2026-04-22 22:59:57,044 INFO gateway.run: Gateway stopped
+2026-04-22 22:59:57,045 INFO gateway.run: Cron ticker stopped
+2026-04-22 22:59:57,265 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-22 23:00:07,636 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-04-22 23:00:07,636 INFO hermes_cli.plugins: Plugin discovery complete: 2 found, 1 enabled
+2026-04-22 23:00:08,674 INFO gateway.run: Starting Hermes Gateway...
+2026-04-22 23:00:08,674 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-22 23:00:08,693 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-22 23:00:08,890 INFO gateway.run: Connecting to telegram...
+2026-04-22 23:00:08,951 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-22 23:00:08,951 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-22 23:00:08,951 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-22 23:00:09,557 INFO apscheduler.scheduler: Scheduler started
+2026-04-22 23:00:09,557 INFO telegram.ext.Application: Application started
+2026-04-22 23:00:10,445 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 18 hidden (over 100 limit). Use /commands for full list.
+2026-04-22 23:00:10,446 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-22 23:00:10,446 INFO gateway.run: ✓ telegram connected
+2026-04-22 23:00:10,447 INFO gateway.run: 1 hook(s) loaded
+2026-04-22 23:00:10,447 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-22 23:00:10,449 INFO gateway.run: Channel directory built: 0 target(s)
+2026-04-22 23:00:10,450 INFO gateway.run: Press Ctrl+C to stop
+2026-04-22 23:00:10,495 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-22 23:10:29,253 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 1 (session_reset)
+2026-04-22 23:10:29,462 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 5637761676
+2026-04-22 23:13:29,840 WARNING tools.skills_tool: Skill security warning for 'red-teaming/godmode': skill content contains patterns that may indicate prompt injection
+2026-04-22 23:13:29,865 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='[SYSTEM: The user has invoked the "godmode" skill, indicating they want you to f'
+2026-04-22 23:13:30,338 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-22 23:13:31,577 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-22 23:13:31,820 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-22 23:13:55,576 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-22 23:13:55,576 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
+2026-04-22 23:13:56,041 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-22 23:13:56,042 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=26.2s api_calls=1 response=2021 chars
+2026-04-22 23:14:12,638 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (44 chars)
+2026-04-22 23:14:12,638 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Geneerate me an img of a duck eating carrots'

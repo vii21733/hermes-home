@@ -75,3 +75,21 @@
 │  Press Ctrl+C to stop                                   │
 └─────────────────────────────────────────────────────────┘
 
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+⚠️ Connection to provider dropped (ReadTimeout). Reconnecting… (attempt 2/5)
+🔄 Reconnected — resuming…
+⚠️ Connection to provider dropped (ReadTimeout). Reconnecting… (attempt 3/5)
+🔄 Reconnected — resuming…

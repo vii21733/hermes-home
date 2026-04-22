@@ -7,7 +7,7 @@ ensuring survival when the launching shell/tool exits.
 import os, sys, time, signal, subprocess, pathlib, json
 
 HERMES_HOME = "/home/z/my-project/hermes-home"
-HERMES_DIR = "/home/z/my-project/hermes-agent"
+HERMES_DIR = "/home/z/my-project/hermes-install"
 HERMES_BIN = f"{HERMES_DIR}/venv/bin/hermes"
 LOG_DIR = f"{HERMES_HOME}/logs"
 PID_FILE = f"{HERMES_HOME}/keeper.pid"

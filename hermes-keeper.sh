@@ -7,7 +7,7 @@
 
 # Configuration
 HERMES_HOME="/home/z/my-project/hermes-home"
-HERMES_DIR="/home/z/my-project/hermes-agent"
+HERMES_DIR="/home/z/my-project/hermes-install"
 HERMES_BIN="$HERMES_DIR/venv/bin/hermes"
 LOG_DIR="$HERMES_HOME/logs"
 LOCK_FILE="$HERMES_HOME/keeper.lock"
@@ -15,7 +15,7 @@ PID_FILE="$HERMES_HOME/keeper.pid"
 LOG_FILE="$LOG_DIR/keeper.log"
 
 # Environment
-export HERMES_HOME="$HERMES_HOME"
+export HERMES_HOME="/home/z/my-project/hermes-home"
 export UV_CACHE_DIR="/home/z/my-project/.uv-cache"
 
 # Ensure log directory exists

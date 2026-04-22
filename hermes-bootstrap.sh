@@ -4,7 +4,7 @@
 
 HERMES_HOME="/home/z/my-project/hermes-home"
 KEEPER="$HERMES_HOME/hermes-keeper.py"
-PYTHON="/home/z/my-project/hermes-agent/venv/bin/python3"
+PYTHON="/home/z/my-project/hermes-install/venv/bin/python3"
 LOG_DIR="$HERMES_HOME/logs"
 LOG_FILE="$LOG_DIR/bootstrap.log"
 
