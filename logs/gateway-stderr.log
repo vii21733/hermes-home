@@ -17,3 +17,11 @@ WARNING gateway.run: ✗ telegram failed to connect
 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 23848). Stop the other gateway first.
 WARNING tools.skills_tool: Skill security warning for 'red-teaming/godmode': skill content contains patterns that may indicate prompt injection
+ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 8044). Stop the other gateway first.
+WARNING gateway.run: ✗ telegram failed to connect
+ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 8044). Stop the other gateway first.
+WARNING gateway.run: ✗ telegram failed to connect
+ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
