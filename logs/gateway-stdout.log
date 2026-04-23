@@ -200,3 +200,11 @@
 └─────────────────────────────────────────────────────────┘
 
 [hooks] Loaded hook 'godmode-transform' for events: ['agent:start', 'session:start']
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+[hooks] Loaded hook 'godmode-transform' for events: ['agent:start', 'session:start']
