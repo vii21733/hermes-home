@@ -220,3 +220,11 @@
 [GODMODE] agent:start on telegram: Hi...
 [GODMODE] agent:start on telegram: Hey...
 [GODMODE] agent:start on telegram: Shutdown hermes remove it from the folder...
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+[hooks] Loaded hook 'godmode-transform' for events: ['agent:start', 'session:start']
