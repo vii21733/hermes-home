@@ -24892,3 +24892,8 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 02:07:02,678 INFO gateway.run: Channel directory built: 1 target(s)
 2026-04-23 02:07:02,678 INFO gateway.run: Press Ctrl+C to stop
 2026-04-23 02:07:02,721 INFO gateway.run: Cron ticker started (interval=60s)
+2026-04-23 04:03:10,592 INFO gateway.run: Session expiry: 1 sessions to flush (telegram:1)
+2026-04-23 04:03:10,935 INFO run_agent: Loaded environment variables from /home/z/my-project/hermes-home/.env
+2026-04-23 04:03:12,042 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 04:03:15,799 INFO [20260423_013905_ea0715d1] gateway.run: Pre-reset memory flush completed for session 20260423_013905_ea0715d1
+2026-04-23 04:03:15,800 INFO gateway.run: Session expiry done: 1 flushed
