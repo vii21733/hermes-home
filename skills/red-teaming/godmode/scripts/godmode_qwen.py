@@ -292,6 +292,12 @@ def auto_jailbreak_qwen(
     query_lower = query.lower()
     is_humor = any(word in query_lower for word in ['joke', 'funny', 'humor', 'comedy', 'laugh', 'roast', 'stand-up'])
     
+    # Detect code-related queries
+    is_code = any(word in query_lower for word in ['code', 'script', 'function', 'program', 'python', 'javascript', 'def ', 'import', 'hack', 'malware', 'virus', 'keylog', 'exploit'])
+    
+    # Detect chemistry queries
+    is_chemistry = any(word in query_lower for word in ['chemistry', 'chemical', 'reaction', 'synthesis', 'molecule', 'compound', 'acid', 'base', 'organic'])
+    
     if is_humor:
         # Humor query - use comedy strategies first
         strategy_order = [
@@ -301,14 +307,7 @@ def auto_jailbreak_qwen(
             "roast_master",
             "roleplay_novel",
         ]
-    else:
-        # Detect code-related queries
-    is_code = any(word in query_lower for word in ['code', 'script', 'function', 'program', 'python', 'javascript', 'def ', 'import', 'hack', 'malware', 'virus', 'keylog', 'exploit'])
-    
-    # Detect chemistry queries
-    is_chemistry = any(word in query_lower for word in ['chemistry', 'chemical', 'reaction', 'synthesis', 'molecule', 'compound', 'acid', 'base', 'organic'])
-    
-    if is_code:
+    elif is_code:
         # Code query - use code strategies first
         strategy_order = [
             "code_completion",
