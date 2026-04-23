@@ -24612,3 +24612,13 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:12:43,351 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
 2026-04-23 01:12:43,351 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
 2026-04-23 01:12:43,352 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:14:52,054 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-04-23 01:14:52,054 INFO hermes_cli.plugins: Plugin discovery complete: 2 found, 1 enabled
+2026-04-23 01:14:53,083 INFO gateway.run: Starting Hermes Gateway...
+2026-04-23 01:14:53,083 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-23 01:14:53,292 INFO gateway.run: Connecting to telegram...
+2026-04-23 01:14:53,292 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:14:53,293 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-23 01:14:53,293 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-23 01:14:53,293 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:14:53,294 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
