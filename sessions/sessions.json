@@ -16,7 +16,7 @@
     "estimated_cost_usd": 0.0,
     "cost_status": "unknown",
     "memory_flushed": false,
-    "suspended": false,
+    "suspended": true,
     "resume_pending": false,
     "resume_reason": null,
     "last_resume_marked_at": null,
