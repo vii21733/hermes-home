@@ -24441,3 +24441,5 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 23:22:59,783 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Eats not eating the carrots'
 2026-04-22 23:23:37,782 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-22 23:23:37,784 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=38.0s api_calls=5 response=357 chars
+2026-04-23 00:26:17,221 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:5637761676 (idle=3760s)
+2026-04-23 00:26:17,223 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
