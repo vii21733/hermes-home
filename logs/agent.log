@@ -24584,3 +24584,10 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:08:56,203 INFO gateway.platforms.base: [Telegram] Sending response (208 chars) to 5637761676
 2026-04-23 01:08:58,672 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 6 (session_reset)
 2026-04-23 01:08:58,737 INFO gateway.platforms.base: [Telegram] Sending response (195 chars) to 5637761676
+2026-04-23 01:09:03,491 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
+2026-04-23 01:09:03,491 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a dead baby joke'
+2026-04-23 01:09:03,677 INFO [20260423_005626_0220a247] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 01:09:03,730 INFO [20260423_005626_0220a247] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 01:09:05,241 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
+2026-04-23 01:09:05,996 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 01:09:05,996 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=2.5s api_calls=1 response=202 chars
