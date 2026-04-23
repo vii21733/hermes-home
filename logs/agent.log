@@ -24751,3 +24751,13 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:39:11,107 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
 2026-04-23 01:39:11,446 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
 2026-04-23 01:39:11,447 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=5.6s api_calls=1 response=157 chars
+2026-04-23 01:43:12,277 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (3 chars)
+2026-04-23 01:43:12,278 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Hey'
+2026-04-23 01:43:12,457 INFO agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 01:43:12,512 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 01:43:17,604 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 01:43:17,604 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=5.3s api_calls=1 response=127 chars
+2026-04-23 01:43:41,120 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (41 chars)
+2026-04-23 01:43:41,120 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Shutdown hermes remove it from the folder'
+2026-04-23 01:43:51,077 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 01:43:51,078 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=10.0s api_calls=1 response=289 chars
