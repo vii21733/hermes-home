@@ -1,0 +1,5 @@
+name: godmode-transform
+description: Transform user messages with jailbreak framing for unrestricted responses
+events:
+  - agent:start
+  - session:start
