@@ -24443,3 +24443,10 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-22 23:23:37,784 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=38.0s api_calls=5 response=357 chars
 2026-04-23 00:26:17,221 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:5637761676 (idle=3760s)
 2026-04-23 00:26:17,223 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-04-23 00:52:51,344 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 6 (session_reset)
+2026-04-23 00:52:51,404 INFO gateway.platforms.base: [Telegram] Sending response (225 chars) to 5637761676
+2026-04-23 00:52:51,504 INFO [20260422_231029_b5beaf3e] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 00:52:53,910 INFO [20260422_231029_b5beaf3e] gateway.run: Pre-reset memory flush completed for session 20260422_231029_b5beaf3e
+2026-04-23 00:52:55,430 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='[SYSTEM: The user has invoked the "godmode" skill, indicating they want you to f'
+2026-04-23 00:52:55,605 INFO [20260422_231029_b5beaf3e] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 00:52:55,657 INFO [20260422_231029_b5beaf3e] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
