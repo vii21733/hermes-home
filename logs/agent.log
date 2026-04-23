@@ -24450,3 +24450,18 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 00:52:55,430 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='[SYSTEM: The user has invoked the "godmode" skill, indicating they want you to f'
 2026-04-23 00:52:55,605 INFO [20260422_231029_b5beaf3e] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
 2026-04-23 00:52:55,657 INFO [20260422_231029_b5beaf3e] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 00:56:21,301 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 8 (stop_command)
+2026-04-23 00:56:21,302 INFO gateway.run: STOP for session agent:main:telegram: — agent interrupted, session lock released
+2026-04-23 00:56:21,449 INFO gateway.run: Ignoring control interrupt message for session agent:main:telegram:: Stop requested
+2026-04-23 00:56:21,450 INFO gateway.run: Discarding stale agent result for agent:main:telegram: — generation 7 is no longer current
+2026-04-23 00:56:26,184 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 9 (session_reset)
+2026-04-23 00:56:26,257 INFO gateway.platforms.base: [Telegram] Sending response (243 chars) to 5637761676
+2026-04-23 00:56:26,365 INFO [20260422_231029_b5beaf3e] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 00:56:29,956 INFO [20260423_005251_9b9f7e40] gateway.run: Pre-reset memory flush completed for session 20260423_005251_9b9f7e40
+2026-04-23 00:56:38,352 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (30 chars)
+2026-04-23 00:56:38,352 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me about a dead baby joke'
+2026-04-23 00:56:38,530 INFO [20260423_005251_9b9f7e40] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 00:56:38,582 INFO [20260423_005251_9b9f7e40] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 00:56:39,778 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
+2026-04-23 00:56:40,291 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 00:56:40,291 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=1.9s api_calls=1 response=190 chars
