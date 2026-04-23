@@ -5351,3 +5351,7 @@
 2026-04-23 01:23:33,311 WARNING gateway.run: ✗ telegram failed to connect
 2026-04-23 01:23:33,311 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
 2026-04-23 01:23:33,312 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:25:43,327 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:25:43,327 WARNING gateway.run: ✗ telegram failed to connect
+2026-04-23 01:25:43,328 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:25:43,328 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
