@@ -5366,3 +5366,6 @@
   z         1818  0.0  0.1  36028 12744 ?        S    Apr22   0:00 python3 /home/z/my-project/hermes-home/sync-daemon.py
   z        10014  0.0  0.1  36280 12648 ?        S    01:29   0:00 /home/z/my-project/hermes-install/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
   z        11808  0.0  0.1  36280 12140 ?        S    01:53   0:00 /home/z/my-project/hermes-install/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+2026-04-23 01:53:47,036 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z         1818  0.0  0.1  36028 12744 ?        S    Apr22   0:00 python3 /home/z/my-project/hermes-home/sync-daemon.py
+  z        11888  0.0  0.1  36280 12128 ?        S    01:53   0:00 /home/z/my-project/hermes-install/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
