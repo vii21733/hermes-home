@@ -24723,3 +24723,22 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:29:39,592 INFO gateway.run: Gateway stopped
 2026-04-23 01:29:39,592 INFO gateway.run: Cron ticker stopped
 2026-04-23 01:29:39,592 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-04-23 01:29:45,385 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-04-23 01:29:45,385 INFO hermes_cli.plugins: Plugin discovery complete: 2 found, 1 enabled
+2026-04-23 01:29:46,470 INFO gateway.run: Starting Hermes Gateway...
+2026-04-23 01:29:46,470 INFO gateway.run: Session storage: /home/z/my-project/hermes-home/sessions
+2026-04-23 01:29:46,489 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-04-23 01:29:46,690 INFO gateway.run: Connecting to telegram...
+2026-04-23 01:29:46,758 INFO gateway.platforms.telegram_network: DoH discovery yielded no new IPs (system DNS: 149.154.166.110); using seed fallback IPs 149.154.167.220
+2026-04-23 01:29:46,758 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.167.220
+2026-04-23 01:29:46,758 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.167.220
+2026-04-23 01:29:47,363 INFO apscheduler.scheduler: Scheduler started
+2026-04-23 01:29:47,363 INFO telegram.ext.Application: Application started
+2026-04-23 01:29:48,441 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 18 hidden (over 100 limit). Use /commands for full list.
+2026-04-23 01:29:48,441 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-04-23 01:29:48,442 INFO gateway.run: ✓ telegram connected
+2026-04-23 01:29:48,442 INFO gateway.run: 2 hook(s) loaded
+2026-04-23 01:29:48,442 INFO gateway.run: Gateway running with 1 platform(s)
+2026-04-23 01:29:48,445 INFO gateway.run: Channel directory built: 1 target(s)
+2026-04-23 01:29:48,445 INFO gateway.run: Press Ctrl+C to stop
+2026-04-23 01:29:48,490 INFO gateway.run: Cron ticker started (interval=60s)
