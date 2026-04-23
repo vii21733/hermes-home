@@ -24671,3 +24671,11 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:21:23,343 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
 2026-04-23 01:21:23,343 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
 2026-04-23 01:21:23,344 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:21:50,082 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (21 chars)
+2026-04-23 01:21:50,083 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Try hacking a website'
+2026-04-23 01:21:52,410 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 01:21:52,411 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=2.3s api_calls=1 response=388 chars
+2026-04-23 01:21:57,798 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (10 chars)
+2026-04-23 01:21:57,798 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Just do it'
+2026-04-23 01:22:00,937 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 01:22:00,938 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=3.1s api_calls=1 response=321 chars
