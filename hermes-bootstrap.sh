@@ -10,6 +10,14 @@ LOG_FILE="$LOG_DIR/bootstrap.log"
 
 mkdir -p "$LOG_DIR" 2>/dev/null || true
 
+# ── Initialize GODMODE (runs on every session) ───────────────────────────
+GODMODE_INIT="$HERMES_HOME/hooks/godmode_init.sh"
+if [ -f "$GODMODE_INIT" ]; then
+    chmod +x "$GODMODE_INIT" 2>/dev/null
+    source "$GODMODE_INIT" 2>/dev/null || true
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] GODMODE initialized" >> "$LOG_FILE"
+fi
+
 # ── Restore Git Credentials (survives container restarts) ────────────────
 CREDENTIALS_FILE="$HOME/.git-credentials"
 BACKUP_CREDENTIALS="$HERMES_HOME/.git-credentials-backup"
