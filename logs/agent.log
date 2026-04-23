@@ -24622,3 +24622,12 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:14:53,293 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
 2026-04-23 01:14:53,293 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
 2026-04-23 01:14:53,294 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:15:40,950 INFO gateway.run: Invalidated run generation for agent:main:telegram: → 8 (session_reset)
+2026-04-23 01:15:41,012 INFO gateway.platforms.base: [Telegram] Sending response (201 chars) to 5637761676
+2026-04-23 01:15:50,572 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5637761676 (24 chars)
+2026-04-23 01:15:50,573 INFO gateway.run: inbound message: platform=telegram user=N Ⓜ️ MEMES MyGate Network chat=5637761676 msg='Tell me a dead baby joke'
+2026-04-23 01:15:50,750 INFO [20260423_010858_cd8bf09f] agent.auxiliary_client: Vision auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 01:15:50,803 INFO [20260423_010858_cd8bf09f] agent.auxiliary_client: Auxiliary auto-detect: using main provider nvidia (qwen/qwen3.5-122b-a10b)
+2026-04-23 01:15:54,770 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (qwen/qwen3.5-122b-a10b) at https://integrate.api.nvidia.com/v1/
+2026-04-23 01:15:55,243 INFO gateway.run: Suppressing normal final send for session agent:main:telegram:: final delivery already confirmed (streamed=True previewed=False).
+2026-04-23 01:15:55,244 INFO gateway.run: response ready: platform=telegram chat=5637761676 time=4.7s api_calls=1 response=686 chars
