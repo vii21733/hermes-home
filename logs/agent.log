@@ -24710,3 +24710,16 @@ telegram.error.NetworkError: Unknown error in HTTP implementation: RuntimeError(
 2026-04-23 01:27:53,385 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
 2026-04-23 01:27:53,385 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
 2026-04-23 01:27:53,385 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:29:38,980 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-04-23 01:29:38,989 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          876  0.0  0.1  37396 13036 ?        S    Apr22   0:00 /home/z/my-project/hermes-install/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+  z         1818  0.0  0.1  36028 12744 ?        S    Apr22   0:00 python3 /home/z/my-project/hermes-home/sync-daemon.py
+2026-04-23 01:29:38,990 INFO gateway.run: Stopping gateway...
+2026-04-23 01:29:39,578 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-04-23 01:29:39,578 INFO apscheduler.scheduler: Scheduler has been shut down
+2026-04-23 01:29:39,589 INFO telegram.ext.Application: Application.stop() complete
+2026-04-23 01:29:39,590 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-04-23 01:29:39,590 INFO gateway.run: ✓ telegram disconnected
+2026-04-23 01:29:39,592 INFO gateway.run: Gateway stopped
+2026-04-23 01:29:39,592 INFO gateway.run: Cron ticker stopped
+2026-04-23 01:29:39,592 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.

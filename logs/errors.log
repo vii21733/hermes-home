@@ -5359,3 +5359,6 @@
 2026-04-23 01:27:53,384 WARNING gateway.run: ✗ telegram failed to connect
 2026-04-23 01:27:53,385 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
 2026-04-23 01:27:53,385 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 8044). Stop the other gateway first.
+2026-04-23 01:29:38,989 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  z          876  0.0  0.1  37396 13036 ?        S    Apr22   0:00 /home/z/my-project/hermes-install/venv/bin/python3 /home/z/my-project/hermes-home/hermes-keeper.py
+  z         1818  0.0  0.1  36028 12744 ?        S    Apr22   0:00 python3 /home/z/my-project/hermes-home/sync-daemon.py
